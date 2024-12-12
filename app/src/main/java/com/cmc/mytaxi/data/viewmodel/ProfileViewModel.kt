@@ -23,4 +23,11 @@ class ProfileViewModel(private val driverRepository: DriverRepository) : ViewMod
         }
         return liveDataDriver
     }
+
+    fun updateDriverImage(driverId: Int, imageUri: String) {
+        viewModelScope.launch {
+            driverRepository.updateDriverImage(driverId, imageUri)
+        }
+    }
+
 }

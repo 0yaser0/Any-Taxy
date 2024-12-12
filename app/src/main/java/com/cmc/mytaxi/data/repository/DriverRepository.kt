@@ -6,10 +6,15 @@ import com.cmc.mytaxi.data.local.models.Driver
 class DriverRepository(private val driverDao: DriverDao) {
 
     suspend fun upsertDriver(driver: Driver) {
-        driverDao.upsertDriver(driver)
+        driverDao.replaceDriver(driver)
     }
 
     suspend fun getDriverById(driverId: Int): Driver? {
         return driverDao.getDriverById(driverId)
     }
+
+    suspend fun updateDriverImage(driverId: Int, imageUri: String) {
+        driverDao.updateDriverImage(driverId, imageUri)
+    }
+
 }

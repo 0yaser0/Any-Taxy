@@ -1,17 +1,25 @@
 package com.cmc.mytaxi.ui.fragments.profile
 
+import android.app.Activity
+import android.app.AlertDialog
+import android.content.ContentValues.TAG
 import android.content.DialogInterface
 import android.content.Intent
+import android.graphics.Bitmap
+import android.net.Uri
 import android.os.Bundle
+import android.provider.MediaStore
 import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.view.ViewGroup
-import androidx.compose.material3.DatePickerDialog
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.CircleCrop
+import com.bumptech.glide.request.RequestOptions
 import com.cmc.mytaxi.App
 import com.cmc.mytaxi.R
 import com.cmc.mytaxi.data.local.models.Driver
@@ -29,6 +37,9 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
     private val binding get() = _binding!!
     private lateinit var driverViewModel: ProfileViewModel
     private var ageCalculated: Int = 0
+    private val pickImageRequest = 1
+    private val cameraRequest = 2
+    private var driverProfileImage: Uri? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -45,6 +56,8 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
             .into(binding.miniRedTaxy)
 
         handleErrorsCalendar()
+
+        imageUpload()
 
         buildProfile()
 
@@ -67,19 +80,103 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
             val lastName = binding.etLastName.text.toString()
             val permiType = binding.etPermiType.text.toString()
 
+            if (firstName.isEmpty() || lastName.isEmpty() || permiType.isEmpty()) {
+                Toast.makeText(requireContext(), "All fields are required!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
+            if (driverProfileImage == null) {
+                Toast.makeText(requireContext(), "Please upload a profile image!", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener
+            }
+
             val driver = Driver(
                 driverId = 1,
                 firstName = firstName,
                 lastName = lastName,
                 age = ageCalculated,
                 permiType = permiType,
-                isCreated = true
+                isCreated = true,
+                imageUri = driverProfileImage.toString()
             )
             driverViewModel.addDriver(driver)
 
             val intent = Intent(requireContext(), HomePage::class.java)
             startActivity(intent)
 
+        }
+    }
+
+    private fun imageUpload() {
+        binding.camera.setOnClickListener {
+            val options = arrayOf("Take Photo", "Choose from Gallery", "Cancel")
+            AlertDialog.Builder(requireContext())
+                .setTitle("Select Action")
+                .setItems(options) { _, which ->
+                    when (which) {
+                        0 -> dispatchTakePictureIntent()
+                        1 -> dispatchChoosePictureIntent()
+                        2 -> {}
+                    }
+                }
+                .show()
+        }
+    }
+
+    private fun dispatchTakePictureIntent() {
+        val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+        if (takePictureIntent.resolveActivity(requireActivity().packageManager) != null) {
+            startActivityForResult(takePictureIntent, cameraRequest)
+        }
+    }
+
+    private fun dispatchChoosePictureIntent() {
+        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        startActivityForResult(intent, pickImageRequest)
+    }
+
+    private fun handleImageUpload(imageUri: Uri) {
+        try {
+            val requestOptions = RequestOptions()
+                .transforms(CircleCrop())
+                .placeholder(R.drawable.ic_camera)
+                .error(R.drawable.ic_error)
+
+            Glide.with(this)
+                .load(imageUri)
+                .apply(requestOptions)
+                .into(binding.camera)
+
+            driverProfileImage = imageUri
+        } catch (e: Exception) {
+            Log.e("ProfileFragment", "Error loading image: ${e.message}")
+        }
+    }
+
+    @Deprecated("Deprecated in Java")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK && data != null) {
+            when (requestCode) {
+                pickImageRequest -> {
+                    data.data?.let { uri ->
+                        handleImageUpload(uri)
+                    }
+                }
+
+                cameraRequest -> {
+                    val imageBitmap = data.extras?.get("data") as Bitmap
+                    val uri = Uri.parse(
+                        MediaStore.Images.Media.insertImage(
+                            requireContext().contentResolver,
+                            imageBitmap,
+                            null,
+                            null
+                        )
+                    )
+                    handleImageUpload(uri)
+                }
+            }
         }
     }
 
