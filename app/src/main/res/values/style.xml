@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="input_15sp_gray">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#7F7F7F</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+</resources>

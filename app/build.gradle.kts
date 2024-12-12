@@ -56,6 +56,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.maps)
     implementation(libs.play.services.location)
+    implementation(libs.androidx.material3.android)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -65,7 +66,7 @@ dependencies {
     implementation(libs.androidx.room.ktx)
 
     //noinspection KaptUsageInsteadOfKsp
-    kapt (libs.androidx.room.compiler)
+    kapt(libs.androidx.room.compiler)
 
     //Kotlin Coroutines
     implementation(libs.kotlinx.coroutines.android)
@@ -77,8 +78,12 @@ dependencies {
     implementation(libs.zxing.android.embedded)
 
     //google maps
-    implementation (libs.play.services.maps)
-    implementation (libs.play.services.location)
-    implementation (libs.easypermissions)
+    implementation(libs.play.services.maps)
+    implementation(libs.play.services.location)
+    implementation(libs.easypermissions)
+
+    //Glide
+    implementation(libs.glide)
+    annotationProcessor(libs.compiler)
 
 }

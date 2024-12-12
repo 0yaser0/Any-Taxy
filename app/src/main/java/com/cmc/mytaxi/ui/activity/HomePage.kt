@@ -10,7 +10,6 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
@@ -20,8 +19,11 @@ import com.cmc.mytaxi.R
 import com.cmc.mytaxi.data.viewmodel.CalculatTraficViewModel
 import com.cmc.mytaxi.data.viewmodel.CalculatTraficViewModelFactory
 import com.cmc.mytaxi.databinding.ActivityHomePageBinding
+import com.cmc.mytaxi.utils.AnyTaxyActivity
 import com.cmc.mytaxi.utils.NotificationHelper
 import com.cmc.mytaxi.utils.PermissionsHelper
+import com.cmc.mytaxi.utils.SetupUI
+import com.cmc.mytaxi.utils.StatusBarUtils
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -33,7 +35,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.Locale
 
-class HomePage : AppCompatActivity(), OnMapReadyCallback {
+class HomePage : AnyTaxyActivity(), OnMapReadyCallback {
     private lateinit var binding: ActivityHomePageBinding
     private lateinit var viewModel: CalculatTraficViewModel
     private lateinit var notificationHelper: NotificationHelper
@@ -63,6 +65,9 @@ class HomePage : AppCompatActivity(), OnMapReadyCallback {
         val factory = CalculatTraficViewModelFactory(this)
         viewModel = ViewModelProvider(this, factory)[CalculatTraficViewModel::class.java]
         notificationHelper = NotificationHelper(this)
+
+        StatusBarUtils.setStatusBarColor(this.window, R.color.white)
+        SetupUI.setupUI(binding.root)
 
         setupLocationServices()
 
@@ -143,7 +148,7 @@ class HomePage : AppCompatActivity(), OnMapReadyCallback {
 
     private fun setupProfileImageClick() {
         binding.profileImage.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java).apply {
+            val intent = Intent(this, Profile::class.java).apply {
                 putExtra("MainActivity", "editProfile")
             }
             startActivity(intent)
