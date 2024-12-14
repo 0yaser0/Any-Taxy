@@ -2,34 +2,31 @@ package com.cmc.mytaxi.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Looper
-import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
-import com.bumptech.glide.Glide
 import com.cmc.mytaxi.App
 import com.cmc.mytaxi.R
 import com.cmc.mytaxi.data.repository.DriverRepository
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
-import com.cmc.mytaxi.databinding.ProfileBinding
+import com.cmc.mytaxi.databinding.ProfileLayoutBinding
 import com.cmc.mytaxi.ui.fragments.profile.EditProfileFragment
 import com.cmc.mytaxi.ui.fragments.profile.ProfileFragment
 import com.cmc.mytaxi.utils.AnyTaxyActivity
 import com.cmc.mytaxi.utils.SetupUI
 import com.cmc.mytaxi.utils.StatusBarUtils
 
-class Profile : AnyTaxyActivity() {
+class BuildProfile : AnyTaxyActivity() {
 
-    private lateinit var binding: ProfileBinding
+    private lateinit var binding: ProfileLayoutBinding
     private lateinit var driverViewModel: ProfileViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = ProfileBinding.inflate(layoutInflater)
+        binding = ProfileLayoutBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         ViewCompat.setOnApplyWindowInsetsListener(binding.main) { view, insets ->
@@ -50,9 +47,8 @@ class Profile : AnyTaxyActivity() {
         if (targetFragment != null) {
             when (targetFragment) {
                 "editProfile" -> {
-                    val fragment = EditProfileFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, fragment)
+                        .replace(R.id.fragment_container, EditProfileFragment())
                         .commit()
                 }
                 else -> {

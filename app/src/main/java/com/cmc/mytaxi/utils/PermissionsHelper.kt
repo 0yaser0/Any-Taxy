@@ -38,7 +38,7 @@ object PermissionsHelper {
     fun showSettingsDialog(context: Context) {
         android.app.AlertDialog.Builder(context)
             .setTitle("Permissions Required")
-            .setMessage("Location permission is necessary for the app to function. Please enable it in the app settings.")
+            .setMessage("Permissions is necessary for the app to function. Please enable it in the app settings.")
             .setPositiveButton("Go to Settings") { _, _ ->
                 val intent = Intent(
                     Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
@@ -49,6 +49,7 @@ object PermissionsHelper {
             .setNegativeButton("Cancel", null)
             .show()
     }
+
     fun checkAndPromptLocationServices(
         context: Context,
         onLocationSettingsSatisfied: () -> Unit,
