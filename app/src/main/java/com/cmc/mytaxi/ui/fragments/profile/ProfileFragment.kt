@@ -2,6 +2,7 @@ package com.cmc.mytaxi.ui.fragments.profile
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.app.ProgressDialog
 import android.content.ContentValues.TAG
 import android.content.DialogInterface
 import android.content.Intent
@@ -17,6 +18,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CircleCrop
 import com.bumptech.glide.request.RequestOptions
@@ -29,6 +31,9 @@ import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.ProfileFragmentLayoutBinding
 import com.cmc.mytaxi.ui.activity.HomePage
 import com.cmc.mytaxi.utils.SetupUI
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.util.Calendar
 
 class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
@@ -74,7 +79,7 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
 
-    private fun buildProfile(){
+    private fun buildProfile() {
         binding.btnBuildProfile.setOnClickListener {
             val firstName = binding.etFirstName.text.toString()
             val lastName = binding.etLastName.text.toString()
@@ -90,20 +95,35 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
                 return@setOnClickListener
             }
 
-            val driver = Driver(
-                driverId = 1,
-                firstName = firstName,
-                lastName = lastName,
-                age = ageCalculated,
-                permiType = permiType,
-                isCreated = true,
-                imageUri = driverProfileImage.toString()
-            )
-            driverViewModel.addDriver(driver)
+            val loadingDialog = ProgressDialog(requireContext()).apply {
+                setMessage("Creating profile, please wait...")
+                setCancelable(false)
+                show()
+            }
 
-            val intent = Intent(requireContext(), HomePage::class.java)
-            startActivity(intent)
+            lifecycleScope.launch {
+                try {
+                    val driver = Driver(
+                        driverId = 1,
+                        firstName = firstName,
+                        lastName = lastName,
+                        age = ageCalculated,
+                        permiType = permiType,
+                        isCreated = true,
+                        imageUri = driverProfileImage.toString()
+                    )
+                    withContext(Dispatchers.IO) {
+                        driverViewModel.addDriver(driver)
+                    }
 
+                    loadingDialog.dismiss()
+                    val intent = Intent(requireContext(), HomePage::class.java)
+                    startActivity(intent)
+                } catch (e: Exception) {
+                    loadingDialog.dismiss()
+                    Toast.makeText(requireContext(), "Error creating profile: ${e.message}", Toast.LENGTH_LONG).show()
+                }
+            }
         }
     }
 

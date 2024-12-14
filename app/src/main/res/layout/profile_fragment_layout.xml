@@ -31,6 +31,9 @@
                 android:id="@+id/etFirstName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/first_name"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -45,6 +48,9 @@
                 android:id="@+id/etLastName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/last_name"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,23 +67,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:drawableEnd="@drawable/calendar"
+                android:drawableEnd="@drawable/ic_calendar"
                 android:drawablePadding="15dp"
+                android:fontFamily="@font/roboto"
                 android:inputType="date" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Number Phone"
-            app:boxStrokeWidth="1dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/etNumberPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -91,6 +84,8 @@
                 android:id="@+id/etPermiType"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_permi"
+                android:drawablePadding="15dp"
                 android:fontFamily="@font/roboto"
                 android:textSize="18sp" />
         </com.google.android.material.textfield.TextInputLayout>

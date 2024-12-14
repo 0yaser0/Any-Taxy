@@ -3,13 +3,13 @@
 
     <style name="input_15sp_gray">
         <item name="android:textSize">15sp</item>
-        <item name="android:textColor">#7F7F7F</item>
+        <item name="android:textColor">@color/gray</item>
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
     <style name="BuildProfileTextStyle">
         <item name="android:fontFamily">@font/poppins_bold</item>
-        <item name="android:textSize">48sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
     <style name="CreateANewTextStyle">
