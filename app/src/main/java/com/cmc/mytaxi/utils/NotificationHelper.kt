@@ -24,10 +24,10 @@ class NotificationHelper(private val context: Context) {
         }
     }
 
-    fun sendFareNotification(fare: Double, distance: Double, time: Long) {
+    fun sendFareNotification(fare: String, distance: String, time: Long) {
         val notification = NotificationCompat.Builder(context, "fare_channel")
             .setContentTitle("Ride Completed")
-            .setContentText("Fare: $fare DH | Distance: $distance km | Time: $time min")
+            .setContentText("Fare:$fare DH Distance:$distance km Time: $time min")
             .setSmallIcon(R.drawable.ic_taxi)
             .build()
 

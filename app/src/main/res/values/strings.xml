@@ -10,4 +10,7 @@
     <string name="date_of_birthday">Date of Birthday</string>
     <string name="build_profil"><font color="#1A1F42">Build</font> <font color="#E6BB11">Profile</font></string>
     <string name="build_ur_profile">Complete your profile so we can know you better</string>
+    <string name="distance_0_00_km">Distance : 0.00 km</string>
+    <string name="time_0_00_min">Time : 0:00 min</string>
+    <string name="fare_2_50_dh">Fare : 2:50 DH</string>
 </resources>

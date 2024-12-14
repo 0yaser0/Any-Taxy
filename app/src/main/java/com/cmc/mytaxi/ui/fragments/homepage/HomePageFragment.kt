@@ -225,10 +225,13 @@ class HomePageFragment : Fragment(), OnMapReadyCallback {
     private fun endRide() {
         handler.removeCallbacks(updateRideTask)
         viewModel.rideData.value?.let { ride ->
+            val distance = String.format(Locale.ROOT, "%.2f", ride.distance)
+            val fare = String.format(Locale.ROOT, "%.2f", ride.totalFare)
             notificationHelper.sendFareNotification(
-                ride.totalFare, ride.distance, ride.timeElapsed
+                fare, distance, ride.timeElapsed
             )
         }
+        viewModel.endRide()
     }
 
     private val updateRideTask = object : Runnable {

@@ -34,7 +34,7 @@
         android:id="@+id/tvDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Distance: 0 km"
+        android:text="@string/distance_0_00_km"
         app:layout_constraintTop_toBottomOf="@id/map"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -43,7 +43,7 @@
         android:id="@+id/tvTimeElapsed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Time: 0 min"
+        android:text="@string/time_0_00_min"
         app:layout_constraintTop_toBottomOf="@id/tvDistance"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -52,7 +52,7 @@
         android:id="@+id/tvTotalFare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fare: 2.50 DH"
+        android:text="@string/fare_2_50_dh"
         app:layout_constraintTop_toBottomOf="@id/tvTimeElapsed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
