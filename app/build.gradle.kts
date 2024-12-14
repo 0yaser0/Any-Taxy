@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     id("kotlin-kapt")
+    id("org.jetbrains.kotlin.plugin.compose") version "2.0.0"
 }
 
 android {
@@ -43,7 +44,12 @@ android {
     }
 
     buildFeatures {
+        compose = true
         viewBinding = true
+        dataBinding = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
     }
 }
 
@@ -87,6 +93,11 @@ dependencies {
 
     //lottie
     implementation (libs.lottie)
+
+    //animated ButtomBar
+    implementation (libs.androidx.databinding.runtime)
+    implementation(libs.animated.navigation.bar)
+    implementation (libs.androidx.navigation.compose)
 
 
 }

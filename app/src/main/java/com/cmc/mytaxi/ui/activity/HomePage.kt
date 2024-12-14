@@ -1,15 +1,29 @@
 package com.cmc.mytaxi.ui.activity
 
 import android.os.Bundle
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.ui.graphics.Color
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.viewpager.widget.ViewPager
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import com.cmc.mytaxi.R
 import com.cmc.mytaxi.databinding.HomePageLayoutBinding
+import com.cmc.mytaxi.ui.adapters.HomeAdapter
 import com.cmc.mytaxi.ui.fragment.HomePageFragment
 import com.cmc.mytaxi.utils.AnyTaxyActivity
+import com.cmc.mytaxi.utils.BottomNavBar
 
 class HomePage : AnyTaxyActivity(){
     private lateinit var binding: HomePageLayoutBinding
+    private lateinit var adapter: HomeAdapter
+    private lateinit var viewPager: ViewPager
+
+    private val selectedIndexState = mutableIntStateOf(0)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +37,53 @@ class HomePage : AnyTaxyActivity(){
             insets
         }
 
+        viewPager = binding.viewPager
+        adapter = HomeAdapter(supportFragmentManager)
+        viewPager.adapter = adapter
+
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container, HomePageFragment())
             .commit()
+
+        binding.composeView.setContent {
+            BottomBarDemoTheme {
+                BottomNavBar(
+                    selectedIndexState = selectedIndexState,
+                    onItemSelected = { index ->
+                        viewPager.setCurrentItem(index, true)
+                    }
+                )
+            }
+        }
+
     }
+}
+
+
+val DarkBlue = Color(0xFF0F2032)
+val Black = Color(0xFF000000)
+val Blue = Color(0xFF0491E9)
+val Blue2 = Color(0xFF0099FF)
+val White = Color(0xFFFFFFFF)
+
+private val LightColorScheme = lightColorScheme(
+    primary = Blue,
+    secondary = Blue2,
+    background = DarkBlue,
+    onBackground = Black,
+    surface = White
+)
+
+@Composable
+fun BottomBarDemoTheme(
+    content: @Composable () -> Unit
+) {
+    MaterialTheme(
+        colorScheme = LightColorScheme,
+        content = content
+    )
+}
+
+@GlideModule
+class MyAppGlideModule : AppGlideModule() {
 }
