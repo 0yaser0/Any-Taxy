@@ -8,4 +8,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="build_profile">Build Profile</string>
     <string name="date_of_birthday">Date of Birthday</string>
+    <string name="build_profil"><font color="#1A1F42">Build</font> <font color="#E6BB11">Profile</font></string>
+    <string name="build_ur_profile">Complete your profile so we can know you better</string>
 </resources>

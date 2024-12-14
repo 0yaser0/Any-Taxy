@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context=".ui.fragments.profile.ProfileFragment">
 
@@ -14,6 +14,7 @@
         android:layout_height="0dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
+        android:background="@drawable/bg_gris_to_white_xml"
         android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -59,6 +60,7 @@
                 android:id="@+id/etCalendar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="18sp"
                 android:drawableEnd="@drawable/calendar"
                 android:drawablePadding="15dp"
                 android:inputType="date" />
@@ -107,15 +109,45 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/waveAnimation">
+
+        <TextView
+            android:id="@+id/tvBuildProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textAppearance="@style/BuildProfileTextStyle"
+            android:text="@string/build_profil" />
+
+        <TextView
+            android:id="@+id/create_a_ne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@style/CreateANewTextStyle"
+            android:text="@string/build_ur_profile" />
+
+    </LinearLayout>
+
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_gravity="center"
+        android:layout_margin="5dp"
         android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/guideline1"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2">
 
         <ImageView

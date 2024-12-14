@@ -7,4 +7,17 @@
         <item name="android:fontFamily">@font/roboto</item>
     </style>
 
+    <style name="BuildProfileTextStyle">
+        <item name="android:fontFamily">@font/poppins_bold</item>
+        <item name="android:textSize">48sp</item>
+    </style>
+
+    <style name="CreateANewTextStyle">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:translationY">-6.25sp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
 </resources>

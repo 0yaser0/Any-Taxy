@@ -40,7 +40,7 @@ class Profile : AnyTaxyActivity() {
         val factory = ProfileViewModelFactory(driverRepository)
         driverViewModel = ViewModelProvider(this, factory)[ProfileViewModel::class.java]
 
-        StatusBarUtils.setStatusBarColor(this.window, R.color.white)
+        StatusBarUtils.setStatusBarColor(this.window, R.color.darkGreen)
         SetupUI.setupUI(binding.root)
 
         val targetFragment = intent.getStringExtra("MainActivity")
