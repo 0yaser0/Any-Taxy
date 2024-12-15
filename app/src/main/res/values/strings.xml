@@ -13,4 +13,8 @@
     <string name="distance_0_00_km">Distance : 0.00 km</string>
     <string name="time_0_00_min">Time : 0:00 min</string>
     <string name="fare_2_50_dh">Fare : 2:50 DH</string>
+    <string name="driver_details">Driver Details</string>
+    <string name="manage_your_npersonal_details">Manage your\npersonal details!</string>
+    <string name="edit_your_personal_details_nwhenever_you_want">Edit your personal details\nwhenever you want.</string>
+    <string name="manage_credentials">Manage credentials</string>
 </resources>

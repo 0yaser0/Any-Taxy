@@ -50,7 +50,7 @@ fun BottomNavBar(
                 ballAnimation = Parabolic(tween(500), 60.dp),
                 indentAnimation = Height(tween(800), 50.dp, 10.dp),
                 barColor = MaterialTheme.colorScheme.onBackground,
-                ballColor = MaterialTheme.colorScheme.background
+                ballColor = MaterialTheme.colorScheme.primary
             ) {
                 navigationBarItems.forEach { item ->
                     Box(

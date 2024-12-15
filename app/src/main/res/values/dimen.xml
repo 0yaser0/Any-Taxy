@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="match_parent" type="dimen">-1dp</item>
+    <item name="wrap_content" type="dimen">-2dp</item>
+    <dimen name="standard_margin">16dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+</resources>
