@@ -15,12 +15,17 @@ Welcome to *AnyTaxy*, a mobile application designed to provide a smooth and effi
 - 📊 *Trip History*: View previous trips with details such as distance, time, and route taken.
 - 🛠️ *Interface Customization*: Adjust the app's appearance according to your preferences with custom themes.
 - 📡 *Offline Mode*: Temporarily stores location data for later synchronization.
+- 🎨 *Animations*: Enjoy smooth, interactive animations using Jetpack Compose, Lottie for complex animations, and GIFs for more engaging content.
+- 🖼️ *Image Loading*: Glide is used for efficient image loading and caching to enhance user experience.
 
 ---
 
 ## 🛠️ *Technologies Used*
 
 - *Kotlin*: Main language for Android development.
+- *Jetpack Compose*: For building the app's UI using modern, declarative UI design.
+- *Lottie*: For adding high-quality animations to the app interface.
+- *Glide*: For efficient image loading and caching.
 - *Google Maps API*: For displaying maps and managing markers.
 - *Fused Location Provider API*: For retrieving GPS positions.
 - *Room Database*: Local storage of trip data.
