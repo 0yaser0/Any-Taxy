@@ -89,8 +89,8 @@ fun BottomNavBar(
     ) { innerPadding ->
         Box(modifier = Modifier.padding(innerPadding)) {
             when (selectedIndex) {
-                NavigationBarItems.HOME.ordinal -> HomePageFragment()
                 NavigationBarItems.PROFILE.ordinal -> EditProfileFragment()
+                NavigationBarItems.HOME.ordinal -> HomePageFragment()
                 NavigationBarItems.SETTINGS.ordinal -> SettingsFragment()
             }
         }

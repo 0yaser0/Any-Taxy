@@ -12,15 +12,15 @@ class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
     override fun getItem(position: Int): Fragment {
         return when (position) {
-            1 -> HomePageFragment()
             0 -> EditProfileFragment()
+            1 -> HomePageFragment()
             2 -> SettingsFragment()
             else -> throw RuntimeException("Invalid position")
         }
     }
 
     override fun getCount(): Int {
-        return 4
+        return 3
     }
 
     fun navigateToFragment(viewPager: ViewPager, index: Int) {
