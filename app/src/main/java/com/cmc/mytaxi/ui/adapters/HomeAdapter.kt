@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.cmc.mytaxi.ui.fragment.HomePageFragment
-import com.cmc.mytaxi.ui.fragment.SettingsFragment
+import com.cmc.mytaxi.ui.fragments.settings.SettingsFragment
 import com.cmc.mytaxi.ui.fragments.profile.EditProfileFragment
 
 class HomeAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {

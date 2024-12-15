@@ -16,5 +16,15 @@
     <string name="driver_details">Driver Details</string>
     <string name="manage_your_npersonal_details">Manage your\npersonal details!</string>
     <string name="edit_your_personal_details_nwhenever_you_want">Edit your personal details\nwhenever you want.</string>
-    <string name="manage_credentials">Manage credentials</string>
+    <string name="manage_profile">Manage Profile</string>
+    <string name="my_settings">My Settings</string>
+    <string name="language">Language</string>
+    <string name="app_version_1_0_0">App version 25.12.2024</string>
+    <string name="logout">Logout</string>
+    <string name="regional">Regional</string>
+    <string name="notifications">Notifications</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="profile">Profile</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="edit_personal_details">Edit personal details</string>
 </resources>

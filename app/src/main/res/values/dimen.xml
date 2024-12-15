@@ -4,4 +4,5 @@
     <item name="wrap_content" type="dimen">-2dp</item>
     <dimen name="standard_margin">16dp</dimen>
     <dimen name="button_height">48dp</dimen>
+    <dimen name="headerTextSize">25sp</dimen>
 </resources>

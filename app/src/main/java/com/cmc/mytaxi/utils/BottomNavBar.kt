@@ -20,11 +20,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.cmc.mytaxi.data.enum_class.NavigationBarItems
 import com.cmc.mytaxi.ui.fragment.HomePageFragment
-import com.cmc.mytaxi.ui.fragment.SettingsFragment
+import com.cmc.mytaxi.ui.fragments.settings.SettingsFragment
 import com.cmc.mytaxi.ui.fragments.profile.EditProfileFragment
 import com.exyte.animatednavbar.AnimatedNavigationBar
 import com.exyte.animatednavbar.animation.balltrajectory.Parabolic
@@ -41,7 +42,7 @@ fun BottomNavBar(
     val selectedIndex = selectedIndexState.value
 
     Scaffold(
-        containerColor = MaterialTheme.colorScheme.surface,
+        containerColor = Color.Transparent,
         bottomBar = {
             AnimatedNavigationBar(
                 modifier = Modifier.height(75.dp),

@@ -1,8 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:id="@+id/main">
+    android:background="@color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:cardCornerRadius="250dp">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/petProfil"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:foregroundGravity="center"
+                        android:scaleType="centerCrop" />
+
+                    <ImageView
+                        android:id="@+id/cadre_pic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/circular_border" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/usernameTextView"
+                    style="@style/viewParent.headerText"
+                    android:layout_alignParentTop="true"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <TextView
+                    style="@style/viewParent.headerText"
+                    android:text="@string/edit_personal_details"
+                    android:textSize="16sp"
+                    android:textColor="#5D5C5C"
+                    android:layout_below="@id/usernameTextView"/>
+
+                <ImageView
+                    style="@style/viewParent"
+                    android:src="@drawable/ic_more"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/darkModeSwitch"
+            style="@style/settingsText"
+            android:drawableStart="@drawable/ic_dark_mode"
+            android:text="@string/dark_mode" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/profile"/>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/edit_profile"
+            app:drawableStartCompat="@drawable/ic_edit_profile" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/notifications"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            style="@style/settingsText"
+            android:checked="true"
+            android:drawableStart="@drawable/ic_notifications"
+            android:text="@string/notifications" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/regional"/>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/language"
+            app:drawableStartCompat="@drawable/ic_languages" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:text="@string/logout"
+            app:drawableStartCompat="@drawable/ic_logout" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="@string/app_version_1_0_0"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</ScrollView>
