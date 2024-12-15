@@ -77,8 +77,6 @@ class HomePageFragment : Fragment(), OnMapReadyCallback {
         viewModel = ViewModelProvider(this, factory)[CalculatTraficViewModel::class.java]
         notificationHelper = NotificationHelper(requireContext())
 
-        StatusBarUtils.setStatusBarColor(requireActivity().window, R.color.white)
-        SetupUI.setupUI(binding.root)
 
         setupLocationServices()
 
@@ -90,7 +88,6 @@ class HomePageFragment : Fragment(), OnMapReadyCallback {
 
         setupMap()
 
-        setupProfileImageClick()
     }
 
     private fun setupLocationServices() {
@@ -156,15 +153,6 @@ class HomePageFragment : Fragment(), OnMapReadyCallback {
     private fun setupMap() {
         val mapFragment = childFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
         mapFragment.getMapAsync(this)
-    }
-
-    private fun setupProfileImageClick() {
-        binding.profileImage.setOnClickListener {
-            val intent = Intent(requireContext(), BuildProfile::class.java).apply {
-                putExtra("MainActivity", "editProfile")
-            }
-            startActivity(intent)
-        }
     }
 
     override fun onMapReady(googleMap: GoogleMap) {

@@ -11,10 +11,13 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
+import com.cmc.mytaxi.R
 import com.cmc.mytaxi.databinding.HomePageLayoutBinding
 import com.cmc.mytaxi.ui.adapters.HomeAdapter
 import com.cmc.mytaxi.utils.AnyTaxyActivity
 import com.cmc.mytaxi.utils.BottomNavBar
+import com.cmc.mytaxi.utils.SetupUI
+import com.cmc.mytaxi.utils.StatusBarUtils
 
 class HomePage : AnyTaxyActivity(){
     private lateinit var binding: HomePageLayoutBinding
@@ -34,6 +37,9 @@ class HomePage : AnyTaxyActivity(){
             view.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        StatusBarUtils.setStatusBarColor(this.window, R.color.yellow)
+        SetupUI.setupUI(binding.root)
 
         viewPager = binding.viewPager
         adapter = HomeAdapter(supportFragmentManager)
@@ -80,15 +86,19 @@ class HomePage : AnyTaxyActivity(){
 val DarkBlue = Color(0xFF0F2032)
 val Black = Color(0xFF000000)
 val Blue = Color(0xFF0491E9)
-val Blue2 = Color(0xFF0099FF)
+val DeathRed = Color(0xFFCC3D4E)
 val White = Color(0xFFFFFFFF)
+val Yellow = Color(0xFFE6BB11)
+val LightGreen = Color(0xFF2BCE72)
+val DarkGreen = Color(0xFF108C73)
 
 private val LightColorScheme = lightColorScheme(
-    primary = Blue,
-    secondary = Blue2,
-    background = DarkBlue,
-    onBackground = Black,
-    surface = White
+    primary = DeathRed,
+    secondary = Yellow,
+    background = LightGreen,
+    onBackground = DarkGreen,
+    surface = White,
+    inverseSurface = Black
 )
 
 @Composable

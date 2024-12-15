@@ -50,7 +50,7 @@ fun BottomNavBar(
                 ballAnimation = Parabolic(tween(500), 60.dp),
                 indentAnimation = Height(tween(800), 50.dp, 10.dp),
                 barColor = MaterialTheme.colorScheme.onBackground,
-                ballColor = MaterialTheme.colorScheme.onBackground
+                ballColor = MaterialTheme.colorScheme.background
             ) {
                 navigationBarItems.forEach { item ->
                     Box(
@@ -76,7 +76,7 @@ fun BottomNavBar(
                             if (selectedIndex == item.item.index) {
                                 Text(
                                     text = item.item.label,
-                                    style = MaterialTheme.typography.bodySmall,
+                                    style = MaterialTheme.typography.bodyLarge,
                                     color = MaterialTheme.colorScheme.surface,
                                     modifier = Modifier.padding(top = 2.dp)
                                 )

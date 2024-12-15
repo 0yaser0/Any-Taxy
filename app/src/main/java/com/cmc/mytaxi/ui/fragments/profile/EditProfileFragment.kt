@@ -12,6 +12,8 @@ import com.cmc.mytaxi.data.repository.DriverRepository
 import com.cmc.mytaxi.databinding.FragmentEditProfileBinding
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
+import com.cmc.mytaxi.utils.SetupUI
+import com.cmc.mytaxi.utils.StatusBarUtils
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
 
@@ -40,10 +42,6 @@ class EditProfileFragment : Fragment(R.layout.fragment_edit_profile) {
             driver?.let {
                 displayDriverDetails(it)
             }
-        }
-
-        binding.goToPosition.setOnClickListener {
-            requireActivity().finish()
         }
 
     }

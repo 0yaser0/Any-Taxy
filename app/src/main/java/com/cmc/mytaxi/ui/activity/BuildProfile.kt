@@ -12,7 +12,6 @@ import com.cmc.mytaxi.data.repository.DriverRepository
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.ProfileLayoutBinding
-import com.cmc.mytaxi.ui.fragments.profile.EditProfileFragment
 import com.cmc.mytaxi.ui.fragments.profile.ProfileFragment
 import com.cmc.mytaxi.utils.AnyTaxyActivity
 import com.cmc.mytaxi.utils.SetupUI
@@ -42,32 +41,15 @@ class BuildProfile : AnyTaxyActivity() {
         StatusBarUtils.setStatusBarColor(this.window, R.color.darkGreen)
         SetupUI.setupUI(binding.root)
 
-        val targetFragment = intent.getStringExtra("MainActivity")
-
-        if (targetFragment != null) {
-            when (targetFragment) {
-                "editProfile" -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, EditProfileFragment())
-                        .commit()
-                }
-                else -> {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, ProfileFragment())
-                        .commit()
-                }
-            }
-        } else {
-            driverViewModel.getDriverById(1).observe(this) { driver ->
-                if (driver?.isCreated == true) {
-                    val intent = Intent(this, HomePage::class.java)
-                    startActivity(intent)
-                    finish()
-                } else {
-                    supportFragmentManager.beginTransaction()
-                        .replace(R.id.fragment_container, ProfileFragment())
-                        .commit()
-                }
+        driverViewModel.getDriverById(1).observe(this) { driver ->
+            if (driver?.isCreated == true) {
+                val intent = Intent(this, HomePage::class.java)
+                startActivity(intent)
+                finish()
+            } else {
+                supportFragmentManager.beginTransaction()
+                    .replace(R.id.fragment_container, ProfileFragment())
+                    .commit()
             }
         }
 
