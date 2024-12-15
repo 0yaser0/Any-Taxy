@@ -5,7 +5,7 @@ import com.cmc.mytaxi.data.local.models.NavigationItem
 
 
 enum class NavigationBarItems(val item: NavigationItem) {
-    PROFILE(NavigationItem(0, "Profile", R.drawable.ic_nav_profile, "Profile")),
-    HOME(NavigationItem(1, "Home", R.drawable.ic_nav_home, "Home")),
-    SETTINGS(NavigationItem(2, "Settings", R.drawable.ic_nav_settings, "Settings")),
+    PROFILE(NavigationItem(0, R.string.profile, R.drawable.ic_nav_profile, "Profile")),
+    HOME(NavigationItem(1, R.string.home, R.drawable.ic_nav_home, "Home")),
+    SETTINGS(NavigationItem(2, R.string.settings, R.drawable.ic_nav_settings, "Settings")),
 }

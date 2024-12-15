@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import androidx.room.Update
 import com.cmc.mytaxi.data.local.models.Driver
 
 @Dao
@@ -17,5 +18,8 @@ interface DriverDao {
 
     @Query("UPDATE drivers SET imageUri = :imageUri WHERE driverId = :driverId")
     suspend fun updateDriverImage(driverId: Int, imageUri: String)
+
+    @Update
+    suspend fun updateDriver(driver: Driver)
 
 }

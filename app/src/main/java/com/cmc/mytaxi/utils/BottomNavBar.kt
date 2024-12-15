@@ -22,6 +22,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.cmc.mytaxi.data.enum_class.NavigationBarItems
 import com.cmc.mytaxi.ui.fragment.HomePageFragment
@@ -76,7 +77,7 @@ fun BottomNavBar(
                             )
                             if (selectedIndex == item.item.index) {
                                 Text(
-                                    text = item.item.label,
+                                    text = stringResource(id = item.item.label),
                                     style = MaterialTheme.typography.bodyLarge,
                                     color = MaterialTheme.colorScheme.surface,
                                     modifier = Modifier.padding(top = 2.dp)

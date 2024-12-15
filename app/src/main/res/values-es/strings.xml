@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Any Taxi</string>
+    <string name="distance_format">Distancia: %1$s km</string>
+    <string name="time_elapsed_format">Tiempo: %1$d min</string>
+    <string name="total_fare_format">Tarifa: %1$s DH</string>
+    <string name="end_ride">Finalizar viaje</string>
+    <string name="start_ride">Iniciar viaje</string>
+    <string name="hello_blank_fragment">Hola, fragmento en blanco</string>
+    <string name="build_profile">Crear perfil</string>
+    <string name="date_of_birthday">Fecha de nacimiento</string>
+    <string name="build_profil"><font color="#1A1F42">Crear</font> <font color="#E6BB11">perfil</font></string>
+    <string name="build_ur_profile">Completa tu perfil para que podamos conocerte mejor</string>
+    <string name="distance_0_00_km">Distancia: 0,00 km</string>
+    <string name="time_0_00_min">Tiempo: 0:00 min</string>
+    <string name="fare_2_50_dh">Tarifa: 2,50 DH</string>
+    <string name="driver_details">conductor Detalles</string>
+    <string name="manage_your_npersonal_details">Gestiona tus\ndetalles personales!</string>
+    <string name="edit_your_personal_details_nwhenever_you_want">Actualiza tus datos cuando lo desees.</string>
+    <string name="manage_profile">Gestionar perfil</string>
+    <string name="my_settings">Mis configuraciones</string>
+    <string name="language">Idioma</string>
+    <string name="app_version_1_0_0">Versión de la app 25.12.2024</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="regional">Regional</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="edit_profile">Editar perfil</string>
+    <string name="profile">Perfil</string>
+    <string name="dark_mode">Modo oscuro</string>
+    <string name="edit_personal_details">Editar detalles personales</string>
+    <string name="first_name">Nombre :</string>
+    <string name="last_name">Apellido :</string>
+    <string name="age">Edad :</string>
+    <string name="permi_type">Tipo de permiso :</string>
+    <string name="home">Inicio</string>
+    <string name="settings">Ajustes</string>
+</resources>

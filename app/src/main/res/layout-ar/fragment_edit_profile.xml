@@ -132,7 +132,7 @@
                     android:id="@+id/fname"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="end"
+                    android:gravity="start"
                     android:text=""
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
@@ -141,7 +141,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:textAppearance="@style/text_20sp_darkBlue"
                     android:visibility="gone" />
             </LinearLayout>
@@ -171,7 +171,7 @@
                     android:id="@+id/lname"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text=""
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
@@ -180,7 +180,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:textAppearance="@style/text_20sp_darkBlue"
                     android:visibility="gone" />
             </LinearLayout>
@@ -220,7 +220,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:textAppearance="@style/text_20sp_darkBlue"
                     android:visibility="gone" />
             </LinearLayout>
@@ -250,7 +250,7 @@
                     android:id="@+id/permiType"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:text=""
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
@@ -259,7 +259,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="@null"
-                    android:gravity="end|center_vertical"
+                    android:gravity="start|center_vertical"
                     android:textAppearance="@style/text_20sp_darkBlue"
                     android:visibility="gone" />
             </LinearLayout>

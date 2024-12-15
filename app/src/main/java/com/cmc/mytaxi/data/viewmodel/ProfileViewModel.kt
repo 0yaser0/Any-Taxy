@@ -30,4 +30,10 @@ class ProfileViewModel(private val driverRepository: DriverRepository) : ViewMod
         }
     }
 
+    fun updateDriver(driver: Driver) {
+        viewModelScope.launch {
+            driverRepository.updateDriver(driver)
+        }
+    }
+
 }

@@ -91,34 +91,37 @@ class HomePageFragment : Fragment(), OnMapReadyCallback {
     }
 
     private fun setupLocationServices() {
-        PermissionsHelper.checkAndPromptLocationServices(
-            requireActivity(),
-            onLocationSettingsSatisfied = {
-                Toast.makeText(requireContext(), "Location services are already enabled.", Toast.LENGTH_SHORT).show()
-            },
-            onResolutionRequired = { exception ->
-                try {
-                    exception.startResolutionForResult(
-                        requireActivity(),
-                        PermissionsHelper.LOCATION_REQUEST_CODE
-                    )
-                } catch (sendEx: IntentSender.SendIntentException) {
+        context?.let { context ->
+            PermissionsHelper.checkAndPromptLocationServices(
+                requireActivity(),
+                onLocationSettingsSatisfied = {
+                    Toast.makeText(context, "Location services are already enabled.", Toast.LENGTH_SHORT).show()
+                },
+                onResolutionRequired = { exception ->
+                    try {
+                        exception.startResolutionForResult(
+                            requireActivity(),
+                            PermissionsHelper.LOCATION_REQUEST_CODE
+                        )
+                    } catch (sendEx: IntentSender.SendIntentException) {
+                        Toast.makeText(
+                            context,
+                            "Unable to start resolution: ${sendEx.message}",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
+                },
+                onFailure = { exception ->
                     Toast.makeText(
-                        requireContext(),
-                        "Unable to start resolution: ${sendEx.message}",
+                        context,
+                        "Failed to check location settings: ${exception.message}",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
-            },
-            onFailure = { exception ->
-                Toast.makeText(
-                    requireContext(),
-                    "Failed to check location settings: ${exception.message}",
-                    Toast.LENGTH_SHORT
-                ).show()
-            }
-        )
+            )
+        }
     }
+
 
     private fun setupRideToggleButton() {
         binding.btnToggleRide.setOnClickListener {

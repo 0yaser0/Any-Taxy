@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">ⴰⵏⵉ ⵜⴰⴽⵙⵉ</string>
+    <string name="distance_format">ⵉⴷⵎⴰ: %1$s ⴽⵎ</string>
+    <string name="time_elapsed_format">ⵜⵉⴼⵉⵏⵜ: %1$d ⵎⵉⵏ</string>
+    <string name="total_fare_format">ⵉⴱⵉⵖⵍ: %1$s ⴷⵀ</string>
+    <string name="end_ride">ⵜⵔⵓⵟⵍ ⵜⵉⵔⴰⵏ</string>
+    <string name="start_ride">ⵜⵔⵙⴽ ⵜⵉⵔⴰⵏ</string>
+    <string name="hello_blank_fragment">ⵣⵣⴰⵢ, ⴰⴽⵙⴽⵙⵉⵏ ⵏ ⵉⵙⵣⴳⴳⵉ</string>
+    <string name="build_profile">ⴰⵙⵓⵔⵔⵓⵢ ⴰⵏⵎⵓⵍⵓⵜ</string>
+    <string name="date_of_birthday">ⵙⵉⵏⵙ ⵏ ⵜⵙⴷⴰⵍⵜ</string>
+    <string name="build_profil"><font color="#1A1F42">ⴰⵙⵓⵔⵔⵓⵢ</font> <font color="#E6BB11">ⴰⵏⵎⵓⵍⵓⵜ</font></string>
+    <string name="build_ur_profile">ⵜⵉⵏⵎⵓⵙⵙ ⵜⴰⵏⵎⵓⵍⵓⵜⵉⵏ ⴰⵏⵉⵙ ⵜⴰⵏⵎⴽⵔⵎⵉⴷⵎ</string>
+    <string name="distance_0_00_km">ⵉⴷⵎⴰ : 0.00 ⴽⵎ</string>
+    <string name="time_0_00_min">ⵜⵉⴼⵉⵏⵜ : 0:00 ⵎⵉⵏ</string>
+    <string name="fare_2_50_dh">ⵉⴱⵉⵖⵍ : 2.50 ⴷⵀ</string>
+    <string name="driver_details">ⵜⴰⵢⴷⵏⴰ ⵏ ⵓⵎⴰⵎⵓ</string>
+    <string name="manage_your_npersonal_details">ⵉⵖⵍⴼ ⴰⵢⵏⵉ\nⵜⴰⵎⵍⵓⵎⵜⵜⵉⵏ!</string>
+    <string name="edit_your_personal_details_nwhenever_you_want">ⵉⵏⵏⵓ ⵜⴰⵎⵍⵓⵎⵜⵜⵉⵏ ⴰⵏⵙ ⵜⵜⴰⵙⵓⵍⵜ.</string>
+    <string name="manage_profile">ⵉⵖⵍⴼ ⴰⵏⵎⵓⵍⵓⵜ</string>
+    <string name="my_settings">ⴰⵎⵙⵓⵍⵉⴷⵜⵉⵏⵉⵏ</string>
+    <string name="language">ⵜⵉⵖⵍⵉ</string>
+    <string name="app_version_1_0_0">ⵉⴷⵓ ⵜⴰⵙⵙⵉⵏ ⵢⵣⵣⵉ 25.12.2024</string>
+    <string name="logout">ⵙⵍⴼ ⵜⴰⵍⵓⴳⵉⴷ</string>
+    <string name="regional">ⵜⴰⵙⵙⴰⵏⵜⴽⵓⵜ</string>
+    <string name="notifications">ⵜⵍⴰⵎⵜⵏⴰ</string>
+    <string name="edit_profile">ⵉⵏⵏⵓ ⴰⵏⵎⵓⵍⵓⵜ</string>
+    <string name="profile">ⴰⵏⵎⵓⵍⵓⵜ</string>
+    <string name="dark_mode">ⵜⵉⵡⴰⴱⵉⵜ ⵏ ⵉⵎⵓⵍⵉ</string>
+    <string name="edit_personal_details">ⵉⵏⵏⵓ ⵜⴰⵎⵍⵓⵎⵜⵜⵉⵏ</string>
+    <string name="first_name">ⴰⵎⴰⵢⴰⵡ :</string>
+    <string name="last_name">ⴰⵎⵙⵙⴰⵏ :</string>
+    <string name="age">ⵜⴰⵙⵓⵙⵓⵜ :</string>
+    <string name="permi_type">ⵜⴰⵏⴰⵡⵡⴰⵢⵜ ⵏ ⵜⵎⵎⵙⵓⵙⵜ :</string>
+    <string name="home">ⴰⵙⵔⵓⴳ</string>
+    <string name="settings">ⵙⵓⵙⵎⵓⵍ</string>
+
+</resources>

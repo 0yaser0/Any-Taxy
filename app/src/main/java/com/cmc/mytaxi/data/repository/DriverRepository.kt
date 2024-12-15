@@ -17,4 +17,8 @@ class DriverRepository(private val driverDao: DriverDao) {
         driverDao.updateDriverImage(driverId, imageUri)
     }
 
+    suspend fun updateDriver(driver: Driver) {
+        driverDao.updateDriver(driver)
+    }
+
 }

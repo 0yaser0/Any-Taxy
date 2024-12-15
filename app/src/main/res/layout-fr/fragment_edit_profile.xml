@@ -125,7 +125,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="center_vertical"
-                    android:text="@string/first_name"
+                    android:text="First Name :"
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
                 <TextView
@@ -161,10 +161,10 @@
 
                 <TextView
                     android:id="@+id/petType"
-                    android:layout_width="wrap_content"
+                    android:layout_width="300px"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="@string/last_name"
+                    android:text="Last Name :"
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
                 <TextView
@@ -204,7 +204,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="@string/age"
+                    android:text="Age :"
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
                 <TextView
@@ -243,7 +243,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:gravity="center_vertical"
-                    android:text="@string/permi_type"
+                    android:text="Permi Type :"
                     android:textAppearance="@style/text_20sp_darkBlue" />
 
                 <TextView
