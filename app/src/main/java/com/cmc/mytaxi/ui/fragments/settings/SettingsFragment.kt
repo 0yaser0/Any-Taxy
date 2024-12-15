@@ -64,28 +64,28 @@ class SettingsFragment : Fragment() {
             }
         }
 
-        val languages = resources.getStringArray(R.array.languages)
-        val defaultLanguage = Locale.getDefault().language
-        val savedLanguage = requireActivity().getPreferences(Context.MODE_PRIVATE)
-            .getString("LANGUAGE_CODE", defaultLanguage)
-
-        binding.langue?.setOnClickListener {
-            context?.let { context ->
-                val builder = AlertDialog.Builder(context)
-                builder.setTitle(getString(R.string.language))
-                builder.setItems(languages) { _, which ->
-                    when (which) {
-                        0 -> setLocale("en")
-                        1 -> setLocale("fr")
-                        2 -> setLocale("ar")
-                        3 -> setLocale("ber")
-                        4 -> setLocale("es")
-                    }
-                }
-                builder.show()
-            }
-            setLocale(savedLanguage)
-        }
+//        val languages = resources.getStringArray(R.array.languages)
+//        val defaultLanguage = Locale.getDefault().language
+//        val savedLanguage = requireActivity().getPreferences(Context.MODE_PRIVATE)
+//            .getString("LANGUAGE_CODE", defaultLanguage)
+//
+//        binding.langue?.setOnClickListener {
+//            context?.let { context ->
+//                val builder = AlertDialog.Builder(context)
+//                builder.setTitle(getString(R.string.language))
+//                builder.setItems(languages) { _, which ->
+//                    when (which) {
+//                        0 -> setLocale("en")
+//                        1 -> setLocale("fr")
+//                        2 -> setLocale("ar")
+//                        3 -> setLocale("ber")
+//                        4 -> setLocale("es")
+//                    }
+//                }
+//                builder.show()
+//            }
+//            setLocale(savedLanguage)
+//        }
     }
 
     private fun setLocale(languageCode: String?) {

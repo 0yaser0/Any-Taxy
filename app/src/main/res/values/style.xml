@@ -74,4 +74,10 @@
         <item name="android:drawableRight">@drawable/ic_more</item>
     </style>
 
+    <style name="btn_25sp_white">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
 </resources>
