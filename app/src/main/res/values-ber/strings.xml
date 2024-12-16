@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">ⴰⵏⵉ ⵜⴰⴽⵙⵉ</string>
-    <string name="distance_format">ⵉⴷⵎⴰ: %1$s ⴽⵎ</string>
-    <string name="time_elapsed_format">ⵜⵉⴼⵉⵏⵜ: %1$d ⵎⵉⵏ</string>
-    <string name="total_fare_format">ⵉⴱⵉⵖⵍ: %1$s ⴷⵀ</string>
+    <string name="distance_format">%1$s km</string>
+    <string name="time_elapsed_format">%1$d min</string>
+    <string name="total_fare_format">%1$s DH</string>
     <string name="end_ride">ⵜⵔⵓⵟⵍ ⵜⵉⵔⴰⵏ</string>
     <string name="start_ride">ⵜⵔⵙⴽ ⵜⵉⵔⴰⵏ</string>
     <string name="hello_blank_fragment">ⵣⵣⴰⵢ, ⴰⴽⵙⴽⵙⵉⵏ ⵏ ⵉⵙⵣⴳⴳⵉ</string>

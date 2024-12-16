@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">n\'import quel Taxi</string>
-    <string name="distance_format">Distance : %1$s km</string>
-    <string name="time_elapsed_format">Temps : %1$d min</string>
-    <string name="total_fare_format">Tarif : %1$s DH</string>
+    <string name="distance_format">%1$s km</string>
+    <string name="time_elapsed_format">%1$d min</string>
+    <string name="total_fare_format">%1$s DH</string>
     <string name="end_ride">Terminer la course</string>
     <string name="start_ride">Commencer la course</string>
     <string name="hello_blank_fragment">Bonjour, fragment vide</string>

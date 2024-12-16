@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">أي تاكسي</string>
-    <string name="distance_format">المسافة: %1$s كم</string>
-    <string name="time_elapsed_format">الوقت: %1$d دقيقة</string>
-    <string name="total_fare_format">الأجرة: %1$s درهم</string>
+    <string name="distance_format">%1$s km</string>
+    <string name="time_elapsed_format">%1$d min</string>
+    <string name="total_fare_format">%1$s DH</string>
     <string name="end_ride">إنهاء الرحلة</string>
     <string name="start_ride">بدء الرحلة</string>
     <string name="hello_blank_fragment">مرحبًا بك في الجزء الفارغ</string>
