@@ -17,6 +17,7 @@ Welcome to *AnyTaxy*, a mobile application designed to provide a smooth and effi
 - 📡 *Offline Mode*: Temporarily stores location data for later synchronization.
 - 🎨 *Animations*: Enjoy smooth, interactive animations using Jetpack Compose, Lottie for complex animations, and GIFs for more engaging content.
 - 🖼️ *Image Loading*: Glide is used for efficient image loading and caching to enhance user experience.
+- 🌐 *Multilingual Support*: Available in English, French, Arabic, Tamazight, and Spanish for a wider user base.
 
 ---
 
@@ -52,6 +53,7 @@ The app requires the following permissions to function properly:
 - 📍 *Location Access*: To determine the driver's position.
 - 🛰️ *GPS Services*: For real-time updates.
 - 📡 *Network Access*: To sync data with the server.
+- 🔔 *Notification Access*: To send and receive important updates.
 
 ---
 
