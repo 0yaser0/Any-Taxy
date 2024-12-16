@@ -1,8 +1,7 @@
-package com.cmc.mytaxi.ui.fragment
+package com.cmc.mytaxi.ui.fragments.homepage
 
 import android.Manifest
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.location.Location
@@ -16,17 +15,14 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.cmc.mytaxi.R
 import com.cmc.mytaxi.data.viewmodel.CalculatTraficViewModel
 import com.cmc.mytaxi.data.viewmodel.CalculatTraficViewModelFactory
 import com.cmc.mytaxi.databinding.HomePageFragmentBinding
-import com.cmc.mytaxi.ui.activity.BuildProfile
+import com.cmc.mytaxi.utils.AnyTaxyFragments
 import com.cmc.mytaxi.utils.NotificationHelper
 import com.cmc.mytaxi.utils.PermissionsHelper
-import com.cmc.mytaxi.utils.SetupUI
-import com.cmc.mytaxi.utils.StatusBarUtils
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.CameraUpdateFactory
@@ -38,7 +34,7 @@ import com.google.android.gms.maps.model.MarkerOptions
 import pub.devrel.easypermissions.EasyPermissions
 import java.util.Locale
 
-class HomePageFragment : Fragment(), OnMapReadyCallback {
+class HomePageFragment : AnyTaxyFragments(), OnMapReadyCallback {
     private var _binding: HomePageFragmentBinding? = null
     private val binding get() = _binding!!
 

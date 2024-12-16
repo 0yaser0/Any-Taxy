@@ -4,17 +4,22 @@ import android.app.Activity
 import android.app.AlertDialog
 import android.app.ProgressDialog
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.DialogInterface
 import android.content.Intent
+import android.content.IntentFilter
 import android.graphics.Bitmap
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -30,13 +35,14 @@ import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.ProfileFragmentLayoutBinding
 import com.cmc.mytaxi.ui.activity.HomePage
+import com.cmc.mytaxi.utils.AnyTaxyFragments
 import com.cmc.mytaxi.utils.SetupUI
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.Calendar
 
-class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
+class ProfileFragment : AnyTaxyFragments() {
 
     private var _binding: ProfileFragmentLayoutBinding? = null
     private val binding get() = _binding!!
@@ -45,6 +51,14 @@ class ProfileFragment : Fragment(R.layout.profile_fragment_layout) {
     private val pickImageRequest = 1
     private val cameraRequest = 2
     private var driverProfileImage: Uri? = null
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.profile_fragment_layout, container, false)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

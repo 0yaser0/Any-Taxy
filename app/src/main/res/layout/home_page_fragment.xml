@@ -17,6 +17,7 @@
             android:layout_marginHorizontal="20dp"/>
 
     <LinearLayout
+        android:id="@+id/cadrCalcul"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:orientation="vertical"

@@ -3,6 +3,8 @@
     <style name="Base.Theme.MyTaxi" parent="Theme.Material3.DayNight.NoActionBar">
        <item name="colorPrimary">@color/lightGreen</item>
         <item name="boxStrokeColor">@color/yellow</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
 

@@ -40,7 +40,5 @@ class GetStarted3Fragment : AnyTaxyFragments() {
 
             requireActivity().overridePendingTransition(R.animator.slide_in_right, R.animator.slide_out_left)
         }
-
-
     }
 }

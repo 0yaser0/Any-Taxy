@@ -5,6 +5,7 @@ import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
@@ -19,13 +20,14 @@ import com.cmc.mytaxi.data.repository.DriverRepository
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.FragmentEditProfileBinding
+import com.cmc.mytaxi.utils.AnyTaxyFragments
 import com.cmc.mytaxi.utils.SetupUI
 import com.google.zxing.BarcodeFormat
 import com.journeyapps.barcodescanner.BarcodeEncoder
 import java.util.Calendar
 
 
-class EditProfileFragment : Fragment(R.layout.fragment_edit_profile) {
+class EditProfileFragment : AnyTaxyFragments() {
 
     private var _binding: FragmentEditProfileBinding? = null
     private val binding get() = _binding!!
@@ -37,6 +39,15 @@ class EditProfileFragment : Fragment(R.layout.fragment_edit_profile) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         hideSystemUIFragments()
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view = inflater.inflate(R.layout.fragment_edit_profile, container, false)
+
+        return view
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

@@ -25,6 +25,7 @@ open class AnyTaxyActivity : AppCompatActivity() {
         }
     }
 }
+
 @Suppress("DEPRECATION")
 open class AnyTaxyFragments : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -38,4 +39,3 @@ open class AnyTaxyFragments : Fragment() {
                     or View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY)
     }
 }
-

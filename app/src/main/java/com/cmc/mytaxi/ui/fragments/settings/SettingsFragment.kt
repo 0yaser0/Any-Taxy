@@ -21,10 +21,11 @@ import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.SettingsFragmentLayoutBinding
 import com.cmc.mytaxi.ui.activity.BuildProfile
+import com.cmc.mytaxi.utils.AnyTaxyFragments
 import kotlinx.coroutines.launch
 import java.util.Locale
 
-class SettingsFragment : Fragment() {
+class SettingsFragment : AnyTaxyFragments() {
     private var _binding: SettingsFragmentLayoutBinding? = null
     private val binding get() = _binding!!
     private lateinit var driverViewModel: ProfileViewModel

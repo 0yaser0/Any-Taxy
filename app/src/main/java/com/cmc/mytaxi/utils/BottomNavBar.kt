@@ -25,7 +25,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.cmc.mytaxi.data.enum_class.NavigationBarItems
-import com.cmc.mytaxi.ui.fragment.HomePageFragment
+import com.cmc.mytaxi.ui.fragments.homepage.HomePageFragment
 import com.cmc.mytaxi.ui.fragments.settings.SettingsFragment
 import com.cmc.mytaxi.ui.fragments.profile.EditProfileFragment
 import com.exyte.animatednavbar.AnimatedNavigationBar
