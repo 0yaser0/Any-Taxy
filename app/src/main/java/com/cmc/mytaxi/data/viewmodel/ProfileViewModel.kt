@@ -36,4 +36,9 @@ class ProfileViewModel(private val driverRepository: DriverRepository) : ViewMod
         }
     }
 
+    fun clearDatabase() {
+        viewModelScope.launch {
+            driverRepository.clearDatabase()
+        }
+    }
 }

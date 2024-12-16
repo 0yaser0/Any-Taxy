@@ -8,11 +8,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AlertDialog
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
 import com.bumptech.glide.Glide
 import com.cmc.mytaxi.App
 import com.cmc.mytaxi.R
@@ -20,7 +20,8 @@ import com.cmc.mytaxi.data.repository.DriverRepository
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModel
 import com.cmc.mytaxi.data.viewmodel.ProfileViewModelFactory
 import com.cmc.mytaxi.databinding.SettingsFragmentLayoutBinding
-import com.cmc.mytaxi.ui.activity.HomePage
+import com.cmc.mytaxi.ui.activity.BuildProfile
+import kotlinx.coroutines.launch
 import java.util.Locale
 
 class SettingsFragment : Fragment() {
@@ -61,6 +62,17 @@ class SettingsFragment : Fragment() {
 
                 binding.fnameTextView.text = driver.firstName
                 binding.lnameTextView.text = driver.lastName
+            }
+        }
+
+        binding.buttonLogOut.setOnClickListener {
+            lifecycleScope.launch {
+                driverViewModel.clearDatabase()
+                val intent = Intent(
+                    requireContext(), BuildProfile::class.java
+                )
+                startActivity(intent)
+                requireActivity().finish()
             }
         }
 

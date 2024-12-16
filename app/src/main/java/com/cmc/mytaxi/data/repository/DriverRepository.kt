@@ -21,4 +21,7 @@ class DriverRepository(private val driverDao: DriverDao) {
         driverDao.updateDriver(driver)
     }
 
+    suspend fun clearDatabase() {
+        driverDao.clearUserTable()
+    }
 }

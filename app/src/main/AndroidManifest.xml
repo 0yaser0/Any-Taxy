@@ -16,7 +16,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_taxi_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyTaxi"
+        android:theme="@style/Base.Theme.MyTaxi"
         tools:targetApi="31">
         <activity
             android:name=".ui.activity.HomePage"

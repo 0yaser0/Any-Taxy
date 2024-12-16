@@ -11,7 +11,7 @@ import com.cmc.mytaxi.data.local.models.Driver
 interface DriverDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun replaceDriver(driver : Driver)
+    suspend fun replaceDriver(driver: Driver)
 
     @Query("SELECT * FROM drivers WHERE driverId = :driverId")
     suspend fun getDriverById(driverId: Int): Driver?
@@ -21,5 +21,8 @@ interface DriverDao {
 
     @Update
     suspend fun updateDriver(driver: Driver)
+
+    @Query("DELETE FROM drivers")
+    suspend fun clearUserTable()
 
 }
