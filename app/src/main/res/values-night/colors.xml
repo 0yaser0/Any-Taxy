@@ -2,7 +2,7 @@
 <resources>
     <color name="black">#FFFFFFFF</color>
     <color name="white">#FF000000</color>
-    <color name="cardLight">#2F2D2D</color>
+    <color name="cardLight">#949494</color>
     <color name="gray">#EDEDED</color>
     <color name="gray_para">#CCFFFFFF</color>
     <color name="gray_card">#CC2C2C2C</color>

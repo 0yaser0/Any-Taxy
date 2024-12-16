@@ -2,6 +2,9 @@ package com.cmc.mytaxi.ui.fragments.profile
 
 import android.content.DialogInterface
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import android.net.Uri
 import android.os.Bundle
 import android.view.Gravity

@@ -28,7 +28,7 @@
 
     <style name="text_20sp_darkBlue">
         <item name="android:textSize">20sp</item>
-        <item name="android:textColor">@color/lightGreen</item>
+        <item name="android:textColor">@color/gray_card</item>
         <item name="android:fontFamily">@font/roboto</item>
         <item name="android:textStyle">bold</item>
     </style>
