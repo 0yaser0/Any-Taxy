@@ -17,6 +17,7 @@
             android:layout_marginHorizontal="20dp"/>
 
     <LinearLayout
+        android:id="@+id/cadrCalcul"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:orientation="vertical"
@@ -58,6 +59,7 @@
                         android:id="@+id/TimeElapsed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:gravity="center_horizontal"
                         android:text="@string/time" />
 
@@ -65,6 +67,7 @@
                         android:id="@+id/tvTimeElapsed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:text="@string/time_0_00_min" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -95,12 +98,14 @@
                         android:id="@+id/Distance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:text="@string/distance" />
 
                     <TextView
                         android:id="@+id/tvDistance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:text="@string/distance_0_00_km" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -130,12 +135,14 @@
                         android:id="@+id/TotalFare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:text="@string/fare" />
 
                     <TextView
                         android:id="@+id/tvTotalFare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/gray_card"
                         android:text="@string/fare_2_50_dh" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -146,6 +153,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_ride"
+            android:textColor="@color/white"
             android:layout_marginHorizontal="20dp"
             android:textAppearance="@style/btn_25sp_white"
             app:layout_constraintTop_toBottomOf="@id/tvTotalFare"
