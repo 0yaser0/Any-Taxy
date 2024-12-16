@@ -123,6 +123,7 @@
             android:text="@string/regional"/>
 
         <TextView
+            android:id="@+id/langue"
             style="@style/viewParent.headerText.settingsTextIcon"
             android:text="@string/language"
             app:drawableStartCompat="@drawable/ic_languages" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Any Taxi</string>
+    <string name="app_name">n\'import quel Taxi</string>
     <string name="distance_format">Distance : %1$s km</string>
     <string name="time_elapsed_format">Temps : %1$d min</string>
     <string name="total_fare_format">Tarif : %1$s DH</string>
@@ -14,6 +14,9 @@
     <string name="distance_0_00_km">Distance : 0,00 km</string>
     <string name="time_0_00_min">Temps : 0:00 min</string>
     <string name="fare_2_50_dh">Tarif : 2,50 DH</string>
+    <string name="distance">Distance :</string>
+    <string name="time">Temps : </string>
+    <string name="fare">Tarif :</string>
     <string name="driver_details">Conducteur Détails</string>
     <string name="manage_your_npersonal_details">Gérer vos\ndétails personnels !</string>
     <string name="edit_your_personal_details_nwhenever_you_want">Modifiez vos détails\npersonnels à volonté</string>
@@ -34,5 +37,15 @@
     <string name="permi_type">Type de permis :</string>
     <string name="home">Accueil</string>
     <string name="settings">Paramètres</string>
+    <string name="made_by">Fabriqué par Yaser</string>
+    <string name="welcome_to_">Bienvenue chez Any Taxy</string>
+    <string name="meet_munchb">L\'application qui simplifie la vie des chauffeurs de taxi. AnyTaxy vous permet de suivre votre position en temps réel sur une carte interactive propulsée par Google Maps. Déplacez-vous avec aisance et précision !</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Suivez vos trajets avec des informations détaillées : distance parcourue, durée et itinéraire emprunté. Restez organisé et transparent dans votre travail.</string>
+    <string name="take_care_of_your_pet">Historique des trajets détaillé</string>
+    <string name="pet_care_made_easy">Performance optimisée</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">Avec des mises à jour automatiques toutes les 5 secondes et un mode hors ligne, AnyTaxy fonctionne parfaitement, même sans connexion Internet.</string>
+    <string name="get_started">Commencer</string>
+    <string name="skip">Passer</string>
+    <string name="next">Suivant</string>
 
 </resources>

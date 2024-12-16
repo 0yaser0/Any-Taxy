@@ -14,6 +14,9 @@
     <string name="distance_0_00_km">المسافة: 0.00 كم</string>
     <string name="time_0_00_min">الوقت: 0:00 دقيقة</string>
     <string name="fare_2_50_dh">الأجرة: 2:50 درهم</string>
+    <string name="distance">المسافة:</string>
+    <string name="time">الوقت:</string>
+    <string name="fare">الأجرة:</string>
     <string name="driver_details">تفاصيل السائق</string>
     <string name="manage_your_npersonal_details">إدارة تفاصيلك\nالشخصية!</string>
     <string name="edit_your_personal_details_nwhenever_you_want">قم بتحرير تفاصيلك الشخصية\nفي أي وقت.</string>
@@ -34,5 +37,16 @@
     <string name="permi_type">نوع الرخصة : </string>
     <string name="home">الرئيسية</string>
     <string name="settings">الإعدادات</string>
+    <string name="made_by">صُنع بواسطة ياسر</string>
+    <string name="welcome_to_">مرحباً بك في Any Taxy</string>
+    <string name="meet_munchb">التطبيق الذي يبسط الحياة لسائقي التاكسي. يسمح لك AnyTaxy بتتبع موقعك في الوقت الحقيقي على خريطة تفاعلية مدعومة من Google Maps. تحرك بسهولة وبدقة!</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">تتبع رحلاتك مع معلومات مفصلة: المسافة المقطوعة، المدة، والمسار المتخذ. ابق منظمًا وشفافًا مع عملك.</string>
+    <string name="take_care_of_your_pet">تاريخ الرحلات المفصل</string>
+    <string name="pet_care_made_easy">أداء محسن</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">مع التحديثات التلقائية كل 5 ثوانٍ ووضع عدم الاتصال، يعمل AnyTaxy بسلاسة حتى بدون اتصال بالإنترنت.</string>
+    <string name="get_started">ابدأ</string>
+    <string name="skip">تخطى</string>
+    <string name="next">التالي</string>
+
 
 </resources>

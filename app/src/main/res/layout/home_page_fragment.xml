@@ -18,7 +18,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="400dp"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
@@ -28,8 +28,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginVertical="20dp"
-            android:padding="5dp"
+            android:layout_marginTop="20dp"
+            android:paddingHorizontal="5dp"
+            android:padding="20dp"
             android:weightSum="3">
 
             <androidx.cardview.widget.CardView
@@ -38,7 +39,7 @@
                 android:layout_weight="1"
                 android:layout_marginEnd="4dp"
                 app:cardCornerRadius="8dp"
-                app:cardElevation="4dp"
+                app:cardElevation="8dp"
                 app:cardBackgroundColor="@android:color/white">
 
                 <LinearLayout
@@ -54,10 +55,16 @@
                         android:src="@drawable/time"  />
 
                     <TextView
+                        android:id="@+id/TimeElapsed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/time" />
+
+                    <TextView
                         android:id="@+id/tvTimeElapsed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:text="@string/time_0_00_min" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -85,10 +92,15 @@
                         android:src="@drawable/ic_distance" />
 
                     <TextView
+                        android:id="@+id/Distance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/distance" />
+
+                    <TextView
                         android:id="@+id/tvDistance"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:text="@string/distance_0_00_km" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
@@ -97,7 +109,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="4dp"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="4dp"
                 app:cardBackgroundColor="@android:color/white">
@@ -106,7 +118,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="10dp"
+                    android:padding="5dp"
                     android:gravity="center">
 
                     <ImageView
@@ -115,23 +127,27 @@
                         android:src="@drawable/ic_total_fare" />
 
                     <TextView
+                        android:id="@+id/TotalFare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fare" />
+
+                    <TextView
                         android:id="@+id/tvTotalFare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:text="@string/fare_2_50_dh" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
         </LinearLayout>
-
 
         <Button
             android:id="@+id/btnToggleRide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/start_ride"
-            android:textAppearance="@style/btn_25sp_white"
             android:layout_marginHorizontal="20dp"
+            android:textAppearance="@style/btn_25sp_white"
             app:layout_constraintTop_toBottomOf="@id/tvTotalFare"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

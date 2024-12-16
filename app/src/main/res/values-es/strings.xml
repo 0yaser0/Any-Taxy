@@ -14,6 +14,9 @@
     <string name="distance_0_00_km">Distancia: 0,00 km</string>
     <string name="time_0_00_min">Tiempo: 0:00 min</string>
     <string name="fare_2_50_dh">Tarifa: 2,50 DH</string>
+    <string name="distance">Distancia:</string>
+    <string name="time">Tiempo:</string>
+    <string name="fare">Tarifa:</string>
     <string name="driver_details">conductor Detalles</string>
     <string name="manage_your_npersonal_details">Gestiona tus\ndetalles personales!</string>
     <string name="edit_your_personal_details_nwhenever_you_want">Actualiza tus datos cuando lo desees.</string>
@@ -34,4 +37,14 @@
     <string name="permi_type">Tipo de permiso :</string>
     <string name="home">Inicio</string>
     <string name="settings">Ajustes</string>
+    <string name="made_by">Hecho por Yaser</string>
+    <string name="welcome_to_">Bienvenido a Any Taxy</string>
+    <string name="meet_munchb">La aplicación que simplifica la vida de los taxistas. AnyTaxy te permite seguir tu ubicación en tiempo real en un mapa interactivo impulsado por Google Maps. ¡Muévete con facilidad y precisión!</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Sigue tus viajes con información detallada: distancia recorrida, duración y ruta tomada. Mantente organizado y transparente con tu trabajo.</string>
+    <string name="take_care_of_your_pet">Historial de viajes detallado</string>
+    <string name="pet_care_made_easy">Rendimiento optimizado</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">Con actualizaciones automáticas cada 5 segundos y un modo sin conexión, AnyTaxy funciona sin problemas, incluso sin conexión a Internet.</string>
+    <string name="get_started">Empezar</string>
+    <string name="skip">Omitir</string>
+    <string name="next">Siguiente</string>
 </resources>

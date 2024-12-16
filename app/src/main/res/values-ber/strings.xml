@@ -13,6 +13,9 @@
     <string name="distance_0_00_km">ⵉⴷⵎⴰ : 0.00 ⴽⵎ</string>
     <string name="time_0_00_min">ⵜⵉⴼⵉⵏⵜ : 0:00 ⵎⵉⵏ</string>
     <string name="fare_2_50_dh">ⵉⴱⵉⵖⵍ : 2.50 ⴷⵀ</string>
+    <string name="distance">ⵉⴷⵎⴰ :</string>
+    <string name="time">ⵜⵉⴼⵉⵏⵜ : </string>
+    <string name="fare">ⵉⴱⵉⵖⵍ :</string>
     <string name="driver_details">ⵜⴰⵢⴷⵏⴰ ⵏ ⵓⵎⴰⵎⵓ</string>
     <string name="manage_your_npersonal_details">ⵉⵖⵍⴼ ⴰⵢⵏⵉ\nⵜⴰⵎⵍⵓⵎⵜⵜⵉⵏ!</string>
     <string name="edit_your_personal_details_nwhenever_you_want">ⵉⵏⵏⵓ ⵜⴰⵎⵍⵓⵎⵜⵜⵉⵏ ⴰⵏⵙ ⵜⵜⴰⵙⵓⵍⵜ.</string>
@@ -33,5 +36,16 @@
     <string name="permi_type">ⵜⴰⵏⴰⵡⵡⴰⵢⵜ ⵏ ⵜⵎⵎⵙⵓⵙⵜ :</string>
     <string name="home">ⴰⵙⵔⵓⴳ</string>
     <string name="settings">ⵙⵓⵙⵎⵓⵍ</string>
+    <string name="made_by">ⵏⵉⵣⵏⵢⴰ ⵏ ⵢⴰⵙⴻⵔ</string>
+    <string name="welcome_to_">ⵣⵉⵍⵍⴰⴽ ⵏ ⴰⵏⵢⵜⴰⴽⵙⵉ</string>
+    <string name="meet_munchb">ⴰⵡⴰⴷⴰⵏ ⵓ ⵎⴰⵡⵣⵏⵣⴷ ⵏ ⵎⴰⵍⴰⵍⵉ ⵏ ⵜⴰⵎⴳⵔⴰ ⴰⵏⵢⵜⴰⴽⵙⵉ. ⴰⴽⴽⵍⴰ ⴳ ⵜⵖⵉⵙⵉⵏ ⵜⵉⵏⵣⵡⵉⵍⵉⵜ ⴰⵏⴷⴰⵙⴻⵏⵜ ⴰⵏⵉⵖⴰⵢⵓⵣⵍ ⵏ ⴰⵍⵖⵓⵢⴷ ⵙ ⴼⴰⵔⵇ ⴳ⵭ⴼⴷ ⵏ ⵎⴷⴰⵔⵉⴽⴰ. ⵎⵍⵎⴻⵏ ⵓⴼ ⵀⵉⵙ ⴳ ⴷⵓⵙ ⵢⵢⵇⴷ ⵏ ⴷⵉⵍⵉⴷⴰ!</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">ⵍⵙ ⵎⴰⵙⵇⵇⵔ ⵏ ⵎⵓⵙⵙⴰⵢⴹⴷ ⵏ ⵜⴰⴳⵏⵉⵏ ⵙ ⵉⵙⵓⵍⵎⴷⵉⵏ ⵓ ⵖⵎⴰⴷⵉⵍⵏ ⴰⵏⵏⵉⵔⴰⵏ. ⴰⵏⵏⴰⵢⴰ ⵙⵉⵙⵍⴰⵏ ⵏ ⴰⵏⵓⵏⵏⵓⵙ ⴰⴳⴳⵉⴷ ⵏ ⵏⴰⵡⵙⴰⵙⴰⵢⵜ!</string>
+    <string name="take_care_of_your_pet">ⵜⵉⴷⵉⵍⵍⵉⵏ ⵏ ⵜⵉⵔⵏⴰⵢⵏ</string>
+    <string name="pet_care_made_easy">ⵜⴰⵇⴳⵇⵏⴰⵢⵜ ⵓⵢⵊⴻⵏⵏⴰⵢⵏ</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">ⵉⵙⵓⵏⴻⵏ ⴰⴳⴳⵔⴰⴽ ⵙ ⴰⵣⵣⵉⵣⴷⴰⵏ ⵖ ⵓⵉⵍⵢⵉⵏ ⴰⵏⵏⴰⵢⴰⵏ ⵓⵇⵇⵏⵓⵏⵉⵜ. ⴰⵏⵢⵜⴰⴽⵙⵉ ⵓⴼⴷⵉⵏ ⵜⵢⵍⴰⴷⵜ ⵀⵉⵙ ⵀⵉⵙⵏⵉⵖ ⴰⴽⴽⵉⴽ ⵏ ⵉⵙⴽⵉⵏ.</string>
+    <string name="get_started">ⵉⴱⵔⵖⵔ ⵎⵙⴳⵏⵉ</string>
+    <string name="skip">ⵉⵙⵢⵢⵉ</string>
+    <string name="next">ⴳⵓⴷⵏⵉ</string>
+
 
 </resources>

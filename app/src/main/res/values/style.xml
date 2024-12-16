@@ -79,5 +79,28 @@
         <item name="android:textColor">#FFFFFF</item>
         <item name="android:fontFamily">@font/poppins_medium</item>
     </style>
+    <style name="btn_30sp_white">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="title_30sp_blue">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/lightGreen</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+    </style>
+
+    <style name="para_20sp_gray">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#CC6C6868</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="move_25sp_lightBlue">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/deathRed</item>
+        <item name="android:fontFamily">@font/roboto</item>
+    </style>
 
 </resources>

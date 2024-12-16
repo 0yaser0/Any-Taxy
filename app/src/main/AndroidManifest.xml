@@ -21,13 +21,19 @@
         <activity
             android:name=".ui.activity.HomePage"
             android:exported="false" />
+        <activity
+            android:name=".ui.activity.GetStarted"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.BuildProfile"
+            android:exported="false" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBbZFFh3itefek-FSpOllGF1-8kpTE55hc" />
 
         <activity
-            android:name=".ui.activity.BuildProfile"
+            android:name=".splash.Splash"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to_">Welcome to Any Taxy</string>
+    <string name="meet_munchb">The app that simplifies life for taxi drivers AnyTaxy allows you to track your real-time location on an interactive map powered by Google Maps. Move with ease and precision!</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Keep track of your journeys with detailed information: distance traveled, duration, and the route taken. Stay organized and transparent with your work.</string>
+    <string name="take_care_of_your_pet">Detailed Trip History</string>
+    <string name="pet_care_made_easy">Optimized Performance</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">With automatic updates every 5 seconds and an offline mode, AnyTaxy works flawlessly, even without an internet connection.</string>
+    <string name="get_started">GetStarted</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+</resources>
