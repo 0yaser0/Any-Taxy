@@ -11,8 +11,7 @@ data class Driver(
     val lastName: String,
     val age: Int,
     val permiType: String,
-    val isCreated:Boolean = false,
-    val imageUri: String? = null
-
-    ) {
-}
+    val isCreated: Boolean = false,
+    val imageUri: String? = null,
+    val isDarkMode: Boolean = false
+)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FFFFFFFF</color>
+    <color name="white">#FF000000</color>
+    <color name="cardLight">#2F2D2D</color>
+    <color name="gray">#EDEDED</color>
+    <color name="gray_para">#CCFFFFFF</color>
+    <color name="gray_card">#CC2C2C2C</color>
+    <color name="yellow">#E6BB11</color>
+    <color name="lightGreen">#2BCE72</color>
+    <color name="darkGreen">#108C73</color>
+    <color name="deathRed">#CC3D4E</color>
+    <color name="darkBlue">#FFFFFFFF</color>
+    <color name="editText">#FFFFFF</color>
+</resources>

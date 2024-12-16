@@ -14,7 +14,7 @@
         android:layout_height="0dp"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:background="@drawable/bg_gris_to_white_xml"
+        android:background="@drawable/bg_build_profile"
         android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"

@@ -8,6 +8,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
@@ -74,6 +75,20 @@ class SettingsFragment : AnyTaxyFragments() {
                 )
                 startActivity(intent)
                 requireActivity().finish()
+            }
+        }
+
+        driverViewModel.getDriverById(1).observe(viewLifecycleOwner) { driver ->
+            binding.darkModeSwitch.isChecked = driver?.isDarkMode ?: false
+        }
+
+        binding.darkModeSwitch.setOnCheckedChangeListener { _, isChecked ->
+            driverViewModel.updateDarkMode(1, isChecked)
+
+            if (isChecked) {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
             }
         }
 

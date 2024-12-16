@@ -24,4 +24,8 @@ class DriverRepository(private val driverDao: DriverDao) {
     suspend fun clearDatabase() {
         driverDao.clearUserTable()
     }
+
+    suspend fun updateDarkMode(id: Int, isDarkMode: Boolean) {
+        driverDao.updateDarkMode(id, isDarkMode)
+    }
 }

@@ -41,4 +41,11 @@ class ProfileViewModel(private val driverRepository: DriverRepository) : ViewMod
             driverRepository.clearDatabase()
         }
     }
+
+    fun updateDarkMode(id: Int, isDarkMode: Boolean) {
+        viewModelScope.launch {
+            driverRepository.updateDarkMode(id, isDarkMode)
+        }
+    }
+
 }

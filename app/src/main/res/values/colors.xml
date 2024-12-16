@@ -2,8 +2,12 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="cardLight">#FFFFFFFF</color>
     <color name="gray">#E1E1E1</color>
     <color name="yellow">#E6BB11</color>
+    <color name="gray_para">#CC6C6868</color>
+    <color name="gray_card">#CC2C2C2C</color>
+    <color name="editText">#1A1F42</color>
     <color name="lightGreen">#2BCE72</color>
     <color name="darkGreen">#108C73</color>
     <color name="deathRed">#CC3D4E</color>

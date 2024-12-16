@@ -8,7 +8,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="build_profile">Build Profile</string>
     <string name="date_of_birthday">Date of Birthday</string>
-    <string name="build_profil"><font color="#1A1F42">Build</font> <font color="#E6BB11">Profile</font></string>
+    <string name="build_profil"><font color="#2BCE72">Build</font> <font color="#E6BB11">Profile</font></string>
     <string name="build_ur_profile">Complete your profile so we can know you better</string>
     <string name="distance_0_00_km">Distance :\n0.00 km</string>
     <string name="time_0_00_min">Time :\n0:00 min</string>

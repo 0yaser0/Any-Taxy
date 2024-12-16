@@ -25,4 +25,7 @@ interface DriverDao {
     @Query("DELETE FROM drivers")
     suspend fun clearUserTable()
 
+    @Query("UPDATE drivers SET isDarkMode = :isDarkMode WHERE driverId = :id")
+    suspend fun updateDarkMode(id: Int, isDarkMode: Boolean)
+
 }
