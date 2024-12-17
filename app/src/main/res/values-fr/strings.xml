@@ -3,55 +3,55 @@
     <string name="distance_format">%1$s km</string>
     <string name="time_elapsed_format">%1$d min</string>
     <string name="total_fare_format">%1$s DH</string>
-    <string name="end_ride">End Ride</string>
-    <string name="start_ride">Start Ride</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="build_profile">Build Profile</string>
-    <string name="date_of_birthday">Date of Birthday</string>
-    <string name="build_profil"><font color="#2BCE72">Build</font> <font color="#E6BB11">Profile</font></string>
-    <string name="build_ur_profile">Complete your profile so we can know you better</string>
+    <string name="end_ride">Terminer le trajet</string>
+    <string name="start_ride">Commencer le trajet</string>
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="build_profile">Créer un profil</string>
+    <string name="date_of_birthday">Date de naissance</string>
+    <string name="build_profil"><font color="#2BCE72">Créer</font> <font color="#E6BB11">un profil</font></string>
+    <string name="build_ur_profile">Complétez votre profil pour que nous puissions mieux vous connaître</string>
     <string name="distance_0_00_km">Distance :\n0.00 km</string>
-    <string name="time_0_00_min">Time :\n0:00 min</string>
-    <string name="fare_2_50_dh">Fare :\n2:50 DH</string>
+    <string name="time_0_00_min">Temps :\n0:00 min</string>
+    <string name="fare_2_50_dh">Tarif :\n2:50 DH</string>
     <string name="distance">Distance :</string>
-    <string name="time">Time :</string>
-    <string name="fare">Fare :</string>
-    <string name="driver_details">Driver Details</string>
-    <string name="manage_your_npersonal_details">Manage your\npersonal details!</string>
-    <string name="edit_your_personal_details_nwhenever_you_want">Edit your personal details\nwhenever you want.</string>
-    <string name="manage_profile">Manage Profile</string>
-    <string name="my_settings">My Settings</string>
-    <string name="language">Language</string>
-    <string name="app_version_1_0_0">App version 25.12.2024</string>
-    <string name="logout">Logout</string>
-    <string name="regional">Regional</string>
+    <string name="time">Temps :</string>
+    <string name="fare">Tarif :</string>
+    <string name="driver_details">Détails du chauffeur</string>
+    <string name="manage_your_npersonal_details">Gérez vos\ndétails personnels !</string>
+    <string name="edit_your_personal_details_nwhenever_you_want">Modifiez vos détails personnels\nquand vous le souhaitez.</string>
+    <string name="manage_profile">Gérer le profil</string>
+    <string name="my_settings">Mes paramètres</string>
+    <string name="language">Langue</string>
+    <string name="app_version_1_0_0">Version de l\'application 25.12.2024</string>
+    <string name="logout">Déconnexion</string>
+    <string name="regional">Régional</string>
     <string name="notifications">Notifications</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="profile">Profile</string>
-    <string name="dark_mode">Dark Mode</string>
-    <string name="edit_personal_details">Edit personal details</string>
-    <string name="first_name">First Name :</string>
-    <string name="last_name">Last Name :</string>
-    <string name="age">Age :</string>
-    <string name="permi_type">Permi Type :</string>
+    <string name="edit_profile">Modifier le profil</string>
+    <string name="profile">Profil</string>
+    <string name="dark_mode">Mode sombre</string>
+    <string name="edit_personal_details">Modifier les détails personnels</string>
+    <string name="first_name">Prénom :</string>
+    <string name="last_name">Nom :</string>
+    <string name="age">Âge :</string>
+    <string name="permi_type">Type de permis :</string>
     <string-array name="languages">
-        <item>English</item>
+        <item>Anglais</item>
         <item>Français</item>
         <item>العربية</item>
         <item>ⵜⴰⵎⴰⵣⵉⵖⵜ</item>
-        <item>Español</item>
+        <item>Espagnol</item>
     </string-array>
-    <string name="home">Home</string>
-    <string name="settings">Settings</string>
-    <string name="made_by">Made by yaser</string>
-    <string name="welcome_to_">Welcome to Any Taxy</string>
-    <string name="meet_munchb">The app that simplifies life for taxi drivers AnyTaxy allows you to track your real-time location on an interactive map powered by Google Maps. Move with ease and precision!</string>
-    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Keep track of your journeys with detailed information: distance traveled, duration, and the route taken. Stay organized and transparent with your work.</string>
-    <string name="take_care_of_your_pet">Detailed Trip History</string>
-    <string name="pet_care_made_easy">Optimized Performance</string>
-    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">With automatic updates every 5 seconds and an offline mode, AnyTaxy works flawlessly, even without an internet connection.</string>
-    <string name="get_started">GetStarted</string>
-    <string name="skip">Skip</string>
-    <string name="next">Next</string>
+    <string name="home">Accueil</string>
+    <string name="settings">Paramètres</string>
+    <string name="made_by">Créé par Yaser</string>
+    <string name="welcome_to_">Bienvenue sur Any Taxy</string>
+    <string name="meet_munchb">L\'application qui simplifie la vie des chauffeurs de taxi. AnyTaxy vous permet de suivre votre position en temps réel sur une carte interactive alimentée par Google Maps. Déplacez-vous avec facilité et précision !</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Suivez vos trajets avec des informations détaillées : distance parcourue, durée et itinéraire emprunté. Restez organisé et transparent dans votre travail.</string>
+    <string name="take_care_of_your_pet">Historique détaillé des trajets</string>
+    <string name="pet_care_made_easy">Performance optimisée</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">Avec des mises à jour automatiques toutes les 5 secondes et un mode hors ligne, AnyTaxy fonctionne parfaitement, même sans connexion Internet.</string>
+    <string name="get_started">Commencer</string>
+    <string name="skip">Passer</string>
+    <string name="next">Suivant</string>
 
 </resources>

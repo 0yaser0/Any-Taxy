@@ -1,57 +1,57 @@
 <resources>
-    <string name="app_name">Any Taxy</string>
-    <string name="distance_format">%1$s km</string>
-    <string name="time_elapsed_format">%1$d min</string>
-    <string name="total_fare_format">%1$s DH</string>
-    <string name="end_ride">End Ride</string>
-    <string name="start_ride">Start Ride</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="build_profile">Build Profile</string>
-    <string name="date_of_birthday">Date of Birthday</string>
-    <string name="build_profil"><font color="#2BCE72">Build</font> <font color="#E6BB11">Profile</font></string>
-    <string name="build_ur_profile">Complete your profile so we can know you better</string>
-    <string name="distance_0_00_km">Distance :\n0.00 km</string>
-    <string name="time_0_00_min">Time :\n0:00 min</string>
-    <string name="fare_2_50_dh">Fare :\n2:50 DH</string>
-    <string name="distance">Distance :</string>
-    <string name="time">Time :</string>
-    <string name="fare">Fare :</string>
-    <string name="driver_details">Driver Details</string>
-    <string name="manage_your_npersonal_details">Manage your\npersonal details!</string>
-    <string name="edit_your_personal_details_nwhenever_you_want">Edit your personal details\nwhenever you want.</string>
-    <string name="manage_profile">Manage Profile</string>
-    <string name="my_settings">My Settings</string>
-    <string name="language">Language</string>
-    <string name="app_version_1_0_0">App version 25.12.2024</string>
-    <string name="logout">Logout</string>
-    <string name="regional">Regional</string>
-    <string name="notifications">Notifications</string>
-    <string name="edit_profile">Edit Profile</string>
-    <string name="profile">Profile</string>
-    <string name="dark_mode">Dark Mode</string>
-    <string name="edit_personal_details">Edit personal details</string>
-    <string name="first_name">First Name :</string>
-    <string name="last_name">Last Name :</string>
-    <string name="age">Age :</string>
-    <string name="permi_type">Permi Type :</string>
+    <string name="app_name">ⴰⵏⵢ ⵜⴰⴽⵙⵉ</string>
+    <string name="distance_format">%1$s ⴽⵎ</string>
+    <string name="time_elapsed_format">%1$d ⴰⵙⴰⵎⵉⵏⴰ</string>
+    <string name="total_fare_format">%1$s ⴷⵀ</string>
+    <string name="end_ride">ⵉⵏⵀⵉ ⵜⵖⵔⵎⵉ</string>
+    <string name="start_ride">ⴰⵔⵎⵉⵍ ⵜⵖⵔⵎⵉ</string>
+    <string name="hello_blank_fragment">ⴰⵢⵏⴰ ⵢⵉⵏⴰⵢ ⵉⵢⵢⵉ ⵜⵉⵙⵙⴰⵍ</string>
+    <string name="build_profile">ⴰⵏⵖ ⵜⵎⴰⵏⴰⵡⴰⵍ</string>
+    <string name="date_of_birthday">ⵜⴰⵙⵙⵓⵏⵜ ⵏ ⵜⴰⵣⴳⵉ</string>
+    <string name="build_profil"><font color="#2BCE72">ⴰⵏⵖ</font> <font color="#E6BB11">ⵜⵎⴰⵏⴰⵡⴰⵍ</font></string>
+    <string name="build_ur_profile">ⴰⵏⵖ ⵜⵎⴰⵏⴰⵡⴰⵍⵏⵏⴰ ⵉⵖ ⴷⵉⴷⵉ ⵉⵏⵖ ⵢⵉ ⵜⴰⴷ ⴳ ⴰⴳⵣⵔⵏ ⵏⵉⵖⵎⵓ ⵜⵏⴰⵡⴰⴷⵢⵏ</string>
+    <string name="distance_0_00_km">ⵜⴰⵏⵏⵉⵙⵉⵜ :\n0.00 ⴽⵎ</string>
+    <string name="time_0_00_min">ⵜⵉⵎⵉⵜ :\n0:00 ⴰⵙⴰⵎⵉⵏⴰ</string>
+    <string name="fare_2_50_dh">ⵉⵏⴰ :\n2:50 ⴷⵀ</string>
+    <string name="distance">ⵜⴰⵏⵏⵉⵙⵉⵜ :</string>
+    <string name="time">ⵜⵉⵎⵉⵜ :</string>
+    <string name="fare">ⵉⵏⴰ :</string>
+    <string name="driver_details">ⵜⵙⵏⵜ ⵏ ⴰⵙⴽⵏⴰⵢⵏ</string>
+    <string name="manage_your_npersonal_details">ⵜⵎⵄⵣⵡⵢⵏ\nⵉⵏⵉⵙⵎⵎⴰⵏⵏⴰ ⵉⵣⴷⵣⴰⵏⵉ!</string>
+    <string name="edit_your_personal_details_nwhenever_you_want">ⵜⵎⵄⵣⵢⵏ ⵉⵏⵉⵙⵎⵎⴰⵏⵏⴰ ⵉⵣⴷⵣⴰⵏⵉ\nⴰⵔⵡⵉⴷ ⵜⴰ ⵜⵓⵏⴽⴽⵉⵍ.</string>
+    <string name="manage_profile">ⵜⵎⵄⵣⵡⵉ ⵜⵎⴰⵏⴰⵡⴰⵍ</string>
+    <string name="my_settings">ⵉⵙⵍⵉⵍⵉ</string>
+    <string name="language">ⵜⵓⴷⴰⵡⵜ</string>
+    <string name="app_version_1_0_0">ⵡⵓⵔⵙⵉⵓⵏ ⵏ ⵜⴰⵙⵎⵎⵉⵔⵜ 25.12.2024</string>
+    <string name="logout">ⵉⵏⵓⵜⵓⵍⴽ</string>
+    <string name="regional">ⵜⴰⵙⵎⵓⵏⵏⵜ</string>
+    <string name="notifications">ⵜⵏⴷⵉⵏⵜ</string>
+    <string name="edit_profile">ⵜⵎⵄⵣⵡⵉ ⵜⵎⴰⵏⴰⵡⴰⵍ</string>
+    <string name="profile">ⵜⵎⴰⵏⴰⵡⴰⵍ</string>
+    <string name="dark_mode">ⵜⵉⵏⴰⵍ ⵜⵎⵓⵔⵜ</string>
+    <string name="edit_personal_details">ⵜⵎⵄⵣⵢⵏ ⵉⵏⵉⵙⵎⵎⴰⵏⵏⴰ</string>
+    <string name="first_name">ⵜⵓⵙⵓⵏⵜ ⴰⵏⴰⴷ :</string>
+    <string name="last_name">ⵜⵓⵙⵓⵏⵜ ⵜⵏⵏⴰⴷ :</string>
+    <string name="age">ⵜⵓⵙⵓⵏⵜ :</string>
+    <string name="permi_type">ⵜⵓⵙⵓⵏⵜ ⴳⴷⵍ :</string>
     <string-array name="languages">
-        <item>English</item>
-        <item>Français</item>
-        <item>العربية</item>
-        <item>ⵜⴰⵎⴰⵣⵉⵖⵜ</item>
-        <item>Español</item>
+        <item>ⵜⵓⴷⴰⵡⵜ ⵜⴰⵏⴽⴽⵓⵍⵍⵉⵜ</item>
+        <item>ⵜⵓⴷⴰⵡⵜ ⵜⴰⵎⴰⵣⵉⵖⵜ</item>
+        <item>ⵜⵓⴷⴰⵡⵜ ⵜⴰⵄⵔⴰⵢⵜ</item>
+        <item>ⵜⵜⴰⵎⴰⵣⵉⵖⵜ</item>
+        <item>ⵜⵓⴷⴰⵡⵜ ⵜⵛⵉⵜⵓⵏⵛⵡⵉⵜ</item>
     </string-array>
-    <string name="home">Home</string>
-    <string name="settings">Settings</string>
-    <string name="made_by">Made by yaser</string>
-    <string name="welcome_to_">Welcome to Any Taxy</string>
-    <string name="meet_munchb">The app that simplifies life for taxi drivers AnyTaxy allows you to track your real-time location on an interactive map powered by Google Maps. Move with ease and precision!</string>
-    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">Keep track of your journeys with detailed information: distance traveled, duration, and the route taken. Stay organized and transparent with your work.</string>
-    <string name="take_care_of_your_pet">Detailed Trip History</string>
-    <string name="pet_care_made_easy">Optimized Performance</string>
-    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">With automatic updates every 5 seconds and an offline mode, AnyTaxy works flawlessly, even without an internet connection.</string>
-    <string name="get_started">GetStarted</string>
-    <string name="skip">Skip</string>
-    <string name="next">Next</string>
+    <string name="home">ⵜⴰⵎⵙⵎⵉⵜ</string>
+    <string name="settings">ⵉⵙⵉⵍⵉ</string>
+    <string name="made_by">ⵏⵉⵣⵏⵢⴰ ⵏ ⵢⴰⵙⴻⵔ</string>
+    <string name="welcome_to_">ⵣⵉⵍⵍⴰⴽ ⵏ ⴰⵏⵢ ⵜⴰⴽⵙⵉ</string>
+    <string name="meet_munchb">ⵜⴰⵎⵓⵙⵙⴰ ⵉⵊⵀⵍⵉ ⴰⴽⵍ ⵜⵉⵏⴰⵎⵎⴰⵢⵏ ⴷⵉⵎⴰⵎⵉⵏ ⵓⴽⵏⵍⵉⵢⵏ ⴰⴷⵖ ⵉⵎⵣⴰⵡⵏ AnyTaxy. ⵜⵙⴼⵉⵜ ⵎⴽⵓⵜⴰⵔ ⵙⵏ ⵜⵓⵜⵔⵉⵇ ⵉⵣⴷⵣⴰⵏ ⴰⴽⵓ ⵡⴷⵓⵙⵙⵏⴰ Google Maps. ⵎⴷⵏ ⵉⵏⵉⵎⵉ ⴰⵍⵓⵏⴽⵉ ⴰⴽⵓⵏ ⵜⵉⵎⵉⵜ!</string>
+    <string name="our_app_helps_you_manage_your_pet_s_health_from_vaccinations_and_medications_to_vet_visits_and_more_ensuring_your_furry_friend_is_always_in_the_best_shape">ⵜⵓⵜⵙⵍ ⵜⴳⵍⵉⵟⵉⵏ ⴰⴳⴳⵉⴷ ⵏ ⵜⵎⴰⵏⵎⴰⵏⵉⵍ ⵙ ⵉⵙⵏⵉⵣⴷⵉⵏ ⴰⵏⴳⵣⵍⴰⵢⵉⵏ: ⵜⴰⵏⵏⵉⵙⵉⵞ ⵜⵉⴷⴰⵎⵉⵏ, ⵜⵉⵎⵉⵜ ⴰⵎⵉⵎⴰⵏⵜ ⵉⵡⵉⵞⵇⵇⵉⵍⵉ. ⵡⵎⵢⵔⵇ ⴰⴷⵉⵏⵎⵓⵏⴰ ⴰⵎⵉⵏⴰⵎ ⵉⵡⵉⵡⵉⵣⵏⴰ ⵜⴳⵣⵉⵏⵉⵢⵓⵏⵉⵏ ⵉⵙⵎⵉ.</string>
+    <string name="take_care_of_your_pet">ⵜⵏⵜⵙⵙⵉⵜ ⵜⴰⵜⵉⴼⵍⵉⵜ</string>
+    <string name="pet_care_made_easy">ⵜⴰⵔⵉⵎⵔⵉⴽⵓⵏⵜ ⵜⵉⵏⴰⵎⵎⴰⵢⵏⵜ</string>
+    <string name="explore_a_comprehensive_array_of_convenient_services_and_a_caring_community_committed_to_ensuring_the_happiness_and_well_being_of_your_beloved_pet">ⵙⴷⵏⵉⵙⵉⵡⵏ ⵉⵎⴷⵡⴰⵙⵙⵓⵏ ⵉⵣⴷⴰⵏⵉⵏ ⵓⵜⴰⵢⵎⵓⵏ ⵜⵓⵜⴰⵔⵉ ⵜⵉⵏⴰⵎⵎⴰⵢⵏⵜ ⴰⵎⴰⵖⵉ ⵜⴰⵎⴰⵙⵎⵉⵜ ⵜⴰⴳⵏⵉⵏⵜ. ⴰⵏⵢⵜⴰⴽⵙⵉ ⵓⴼⴷⵉⵏⵜⵉⵎⵓⵜ ⴷ ⵜⵎⴰⵜⵛⵙⵜ ⴷⴰⴳⵢⵏⵏ, ⵜⵉⵏⵏⵉⵙⵍ ⴽⵉⵎⴹⵓⵣⴹⴰⵏ ⴷⴷⵉⵜ ⵜⵉⵏⴰⵎⵎⴰⵢⵏⵜ.</string>
+    <string name="get_started">ⴷⵉⴷⵉⵍⵉ</string>
+    <string name="skip">ⵜⴼⵉⵏⵉⵎ</string>
+    <string name="next">ⵜⵏⵏⵉⴹ</string>
 
 </resources>
