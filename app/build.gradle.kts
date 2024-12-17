@@ -68,7 +68,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     //Circular Indicator
-    implementation ("me.relex:circleindicator:2.1.6")
+    implementation (libs.circleindicator)
 
     //Room
     implementation(libs.androidx.room.runtime)

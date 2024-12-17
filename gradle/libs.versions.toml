@@ -1,5 +1,6 @@
 [versions]
 agp = "8.7.3"
+circleindicator = "2.1.6"
 glide = "4.12.0"
 kotlin = "2.0.0"
 coreKtx = "1.15.0"
@@ -25,6 +26,7 @@ databindingRuntime = "8.7.3"
 
 [libraries]
 androidx-databinding-runtime = { module = "androidx.databinding:databinding-runtime", version.ref = "databindingRuntime" }
+circleindicator = { module = "me.relex:circleindicator", version.ref = "circleindicator" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "glide" }
 androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationCompose" }
 animated-navigation-bar = { module = "com.exyte:animated-navigation-bar", version.ref = "animatedNavigationBar" }
